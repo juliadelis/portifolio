@@ -1,36 +1,43 @@
-"use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import NavLink from "./NavLink";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+'use client'
+import React, { useState } from 'react'
+import Link from 'next/link'
+import NavLink from './NavLink'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import MenuOverlay from './MenuOverlay'
+import Image from 'next/image'
+import useSmoothScroll from './useSmoothScroll'
 
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
+    title: 'Sobre',
+    path: '#about',
   },
   {
-    title: "Projects",
-    path: "#projects",
+    title: 'Projetos',
+    path: '#projects',
   },
   {
-    title: "Contact",
-    path: "#contact",
+    title: 'Contato',
+    path: '#contact',
   },
-];
+]
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  useSmoothScroll()
   return (
     <nav className="fixed mx-auto border-b border-b-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 PY-2">
         <Link
-          href={"/"}
+          href={'/'}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          Logo
+          <Image
+            className="rounded mb-4 lg:mb-0"
+            src="/images/jdelis.svg"
+            width={130}
+            height={130}
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -61,7 +68,7 @@ const Navbar = () => {
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
