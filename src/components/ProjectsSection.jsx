@@ -1,84 +1,40 @@
-'use client'
+"use client";
 
-import React, { useState, useRef } from 'react'
-import ProjectCard from './ProjectCard'
-import ProjectTag from './ProjectTag'
-import { motion, useInView } from 'framer-motion'
+import React, { useState, useRef } from "react";
+import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
+import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
     id: 1,
-    title: 'React Portfolio Website',
-    description: 'Project 1 description',
-    image: '/images/projects/1.png',
-    tag: ['Tudo', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    title: "React Camp Website",
+    description:
+      "Projeto desenvolvido com Next13 visando experiencia UX/UI do usuário",
+    image: "/images/projects/mockup-portifolio-wanderer.png",
+    tag: ["Tudo", "Web"],
+    gitUrl: "https://github.com/juliadelis/wanderer",
+    previewUrl: "https://wanderer-three.vercel.app/",
   },
-  {
-    id: 2,
-    title: 'Potography Portfolio Website',
-    description: 'Project 2 description',
-    image: '/images/projects/2.png',
-    tag: ['Tudo', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-  {
-    id: 3,
-    title: 'E-commerce Application',
-    description: 'Project 3 description',
-    image: '/images/projects/3.png',
-    tag: ['Tudo', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-  {
-    id: 4,
-    title: 'Food Ordering Application',
-    description: 'Project 4 description',
-    image: '/images/projects/4.png',
-    tag: ['Tudo', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-  {
-    id: 5,
-    title: 'React Firebase Template',
-    description: 'Authentication and CRUD operations',
-    image: '/images/projects/5.png',
-    tag: ['Tudo', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-  {
-    id: 6,
-    title: 'Full-stack Roadmap',
-    description: 'Project 5 description',
-    image: '/images/projects/6.png',
-    tag: ['Tudo', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
-  },
-]
+];
 
 function ProjectsSection() {
-  const [tag, setTag] = useState('Tudo')
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const [tag, setTag] = useState("Tudo");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
-    setTag(newTag)
-  }
+    setTag(newTag);
+  };
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
-  )
+  );
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-  }
+  };
 
   return (
     <section id="projects">
@@ -89,17 +45,17 @@ function ProjectsSection() {
         <ProjectTag
           onClick={handleTagChange}
           name="Tudo"
-          isSelected={tag === 'Tudo'}
+          isSelected={tag === "Tudo"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Web"
-          isSelected={tag === 'Web'}
+          isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
-          isSelected={tag === 'Mobile'}
+          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -109,9 +65,8 @@ function ProjectsSection() {
             className="list-none"
             variants={cardVariants}
             initial="initial"
-            animate={isInView ? 'animate' : 'inicial'}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
+            animate={isInView ? "animate" : "inicial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}>
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -124,7 +79,7 @@ function ProjectsSection() {
         ))}
       </ul>
     </section>
-  )
+  );
 }
 
-export default ProjectsSection
+export default ProjectsSection;
