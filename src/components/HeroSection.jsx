@@ -47,7 +47,7 @@ const HeroSection = () => {
               </Link>
             </button>
             <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full bg-transparent border border-[#AB2C31] hover:bg-[#360E0F] text-white  mt-3">
-              <Link href="juliadelis.com/curriculo.pdf">Baixar CV</Link>
+              <Link href="/curriculo.pdf">Baixar CV</Link>
             </button>
           </div>
         </motion.div>
