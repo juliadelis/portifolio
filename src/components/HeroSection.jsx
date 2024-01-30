@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -12,8 +13,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center justify-self-start"
-        >
+          className="col-span-8 place-self-center justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold ">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-800">
               Olá, sou {""}
@@ -28,7 +28,7 @@ const HeroSection = () => {
                 1000,
                 "UX/UI Designer",
                 1000,
-                "Designer de Iteração",
+                "Designer de Interação",
                 1000,
               ]}
               wrapper="span"
@@ -42,10 +42,12 @@ const HeroSection = () => {
           </p>
           <div>
             <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-r  from-[#AB2C31] to-[#360E0F] hover:bg-slate-200">
-              Me contrate
+              <Link href="https://www.linkedin.com/in/juliadelis/">
+                Me contrate
+              </Link>
             </button>
             <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full bg-transparent border border-[#AB2C31] hover:bg-[#360E0F] text-white  mt-3">
-              Baixar CV
+              <Link href="juliadelis.com/curriculo.pdf">Baixar CV</Link>
             </button>
           </div>
         </motion.div>
@@ -53,8 +55,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
-        >
+          className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div className="relative bg-[#181818] rounded-full w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
             <Image
               src="/images/eu-hd-sem-circulo.png"
