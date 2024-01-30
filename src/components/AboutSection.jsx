@@ -1,12 +1,12 @@
-'use client'
-import React, { useTransition, useState } from 'react'
-import Image from 'next/image'
-import TabButton from './TabButton'
+"use client";
+import React, { useTransition, useState } from "react";
+import Image from "next/image";
+import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: 'Skills',
-    id: 'skills',
+    title: "Skills",
+    id: "skills",
     content: (
       <ul className="list-disc pl-2 grid grid-cols-2 gap-2">
         <li>Next</li>
@@ -14,10 +14,10 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>React</li>
-        <li>Next</li>
+        <li>Tailwind</li>
         <li>Gitlab</li>
 
-        <li>Vue</li>
+        <li>Vite</li>
         <li>C#</li>
         <li>Metodologias Ágeis</li>
         <li>UX/UI</li>
@@ -28,8 +28,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Education',
-    id: 'education',
+    title: "Education",
+    id: "education",
     content: (
       <ul className="list-disc pl-2">
         <li>
@@ -50,8 +50,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Certifications',
-    id: 'certifications',
+    title: "Certifications",
+    id: "certifications",
     content: (
       <ul className="list-disc pl-2">
         <li className="">
@@ -62,16 +62,16 @@ const TAB_DATA = [
       </ul>
     ),
   },
-]
+];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState('skills')
-  const [isPending, startTransition] = useTransition()
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
   const handleTabChange = (id) => {
     startTransition(() => {
-      setTab(id)
-    })
-  }
+      setTab(id);
+    });
+  };
   return (
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -93,24 +93,21 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange('skills')}
-              active={tab === 'skills'}
-            >
-              {' '}
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}>
+              {" "}
               Skills
-            </TabButton>{' '}
+            </TabButton>{" "}
             <TabButton
-              selectTab={() => handleTabChange('education')}
-              active={tab === 'education'}
-            >
-              {' '}
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}>
+              {" "}
               Educação
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('certifications')}
-              active={tab === 'certifications'}
-            >
-              {' '}
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}>
+              {" "}
               Certificações
             </TabButton>
           </div>
@@ -120,7 +117,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
