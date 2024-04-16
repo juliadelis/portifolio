@@ -15,8 +15,10 @@ const TAB_DATA = [
         <li>TypeScript</li>
         <li>React</li>
         <li>Tailwind</li>
-        <li>Gitlab</li>
+        <li>Sass</li>
+        <li>Git</li>
 
+        <li>React</li>
         <li>Vite</li>
         <li>C#</li>
         <li>Metodologias Ágeis</li>
@@ -32,6 +34,11 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
+        <li>
+          MBA em Engenharia de Software
+          <br />
+          <span className="italic text-[#ADB7BE]">MBA USP/Esalq</span>
+        </li>
         <li>
           Pós Graduação em Desenvolvimento Full Stack
           <br />
@@ -85,11 +92,12 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">Mais sobre mim</h2>
           <p className="text-base md:text-lg ">
             Sou uma desenvolvedora web full stack apaixonada por criar
-            aplicações web interativas e responsivas. Tenho experiência em
-            trabalhar com Next, JavaScript, React, Node.js, Strapi, HTML, CSS e
-            Git. Aprendo rápido e estou sempre em busca de expandir meus
-            conhecimentos e habilidades. Trabalho em equipe e estou animada para
-            trabalhar com outras pessoas para criar aplicações incríveis.
+            aplicações web interativas e responsivas. Possuo experiência sólida
+            em Next.js, Typescript, JavaScript, React, Node.js, Strapi, HTML,
+            CSS e Git. Aprendo rápido e estou sempre buscando ampliar meu
+            conhecimento e aprimorar minhas habilidades. Sou colaborativa por
+            natureza e me anima colaborar com outros profissionais para
+            desenvolver aplicações de alto impacto.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
