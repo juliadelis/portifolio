@@ -10,7 +10,7 @@ const projectsData = [
     id: 1,
     title: "React Camp Website",
     description:
-      "Projeto desenvolvido com Next13 visando experiencia UX/UI do usuário",
+      "O projeto de UX/UI para o aplicativo de viagens da agência de camping visa proporcionar uma experiência digital envolvente e centrada no usuário, que não apenas simplifica o processo de planejamento e reserva, mas também inspira uma conexão mais profunda com a natureza e a comunidade de campistas em todo o mundo.",
     image: "/images/projects/mockup-portifolio-wanderer.png",
     tag: ["Tudo", "Web"],
     gitUrl: "https://github.com/juliadelis/wanderer",
