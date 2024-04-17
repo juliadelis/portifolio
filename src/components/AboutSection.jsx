@@ -92,11 +92,11 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">Mais sobre mim</h2>
           <p className="text-base md:text-lg ">
             Sou uma desenvolvedora web full stack apaixonada por criar
-            aplicações web interativas e responsivas. Possuo experiência sólida
-            em Next.js, Typescript, JavaScript, React, Node.js, Strapi, HTML,
-            CSS e Git. Aprendo rápido e estou sempre buscando ampliar meu
-            conhecimento e aprimorar minhas habilidades. Sou colaborativa por
-            natureza e me anima colaborar com outros profissionais para
+            aplicações interativas e responsivas. Possuo experiência sólida em
+            Next.js, Typescript, JavaScript, React, Node.js, Strapi, HTML, CSS e
+            Git. Aprendo rápido e estou sempre buscando ampliar meu conhecimento
+            e aprimorar minhas habilidades. Sou colaborativa por natureza e me
+            sinto motivada ao colaborar com outros profissionais para
             desenvolver aplicações de alto impacto.
           </p>
           <div className="flex flex-row justify-start mt-8">
