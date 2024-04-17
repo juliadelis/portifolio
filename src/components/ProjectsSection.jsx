@@ -8,16 +8,6 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Camp Website",
-    description:
-      "O projeto de UX/UI para o aplicativo de viagens da agência de camping visa proporcionar uma experiência digital envolvente e centrada no usuário, que não apenas simplifica o processo de planejamento e reserva, mas também inspira uma conexão mais profunda com a natureza e a comunidade de campistas em todo o mundo.",
-    image: "/images/projects/mockup-portifolio-wanderer.png",
-    tag: ["Tudo", "Web"],
-    gitUrl: "https://github.com/juliadelis/wanderer",
-    previewUrl: "https://wanderer-three.vercel.app/",
-  },
-  {
-    id: 2,
     title: "Horsing Around Desktop Website",
     description:
       "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
@@ -25,6 +15,16 @@ const projectsData = [
     tag: ["Tudo", "Web"],
     gitUrl: "https://github.com/juliadelis/horsingAround",
     previewUrl: "https://horsing-around.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "React Camp Website",
+    description:
+      "O projeto de UX/UI para o aplicativo de viagens da agência de camping visa proporcionar uma experiência digital envolvente e centrada no usuário, que não apenas simplifica o processo de planejamento e reserva, mas também inspira uma conexão mais profunda com a natureza e a comunidade de campistas em todo o mundo.",
+    image: "/images/projects/mockup-portifolio-wanderer.png",
+    tag: ["Tudo", "Web"],
+    gitUrl: "https://github.com/juliadelis/wanderer",
+    previewUrl: "https://wanderer-three.vercel.app/",
   },
 ];
 
