@@ -16,6 +16,16 @@ const projectsData = [
     gitUrl: "https://github.com/juliadelis/wanderer",
     previewUrl: "https://wanderer-three.vercel.app/",
   },
+  {
+    id: 2,
+    title: "Horsing Around Desktop Website",
+    description:
+      "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
+    image: "/images/projects/mockup-portifolio-horsing_around.png",
+    tag: ["Tudo", "Web"],
+    gitUrl: "https://github.com/juliadelis/horsingAround",
+    previewUrl: "https://horsing-around.vercel.app/",
+  },
 ];
 
 function ProjectsSection() {
