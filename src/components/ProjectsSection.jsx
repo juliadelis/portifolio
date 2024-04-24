@@ -7,8 +7,18 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 3,
+    title: "Era Principle Website",
+    description:
+      "O Era Principle é um site em Next.js de streetwear que combina moda urbana com tecnologia de realidade aumentada (RA), oferecendo uma experiência imersiva aos usuários. A marca busca transcender fronteiras físicas e criar um universo estilístico único, onde a moda e a tecnologia se fundem para criar algo verdadeiramente inovador.",
+    image: "/images/projects/mockup-portifolio-era.png",
+    tag: ["Tudo", "Web"],
+    gitUrl: "https://github.com/juliadelis/eraprincipal",
+    previewUrl: "https://eraprincipal.vercel.app/",
+  },
+  {
     id: 1,
-    title: "Horsing Around Desktop Website",
+    title: "Horsing Around Website",
     description:
       "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
     image: "/images/projects/mockup-portifolio-horsing_around.png",
