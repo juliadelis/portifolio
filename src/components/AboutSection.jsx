@@ -18,7 +18,7 @@ const TAB_DATA = [
         <li>Sass</li>
         <li>Git</li>
 
-        <li>React</li>
+        <li>Express</li>
         <li>Vite</li>
         <li>C#</li>
         <li>Metodologias Ágeis</li>
