@@ -4,7 +4,7 @@ const ProjectTagDetails = ({ name, theme = "dark" }) => {
   const isDark = theme === "dark";
 
   const palette = {
-    textBase: isDark ? "text-[#ADB7BE]" : "text-[#33353F]",
+    textBase: isDark ? "text-white" : "text-[#33353F]",
     hover: isDark ? "hover:text-white" : "hover:text-[#111827]",
   };
 
