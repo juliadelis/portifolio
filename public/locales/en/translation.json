@@ -1,0 +1,45 @@
+{
+  "header": "Hello, i am",
+  "designer": "Interactive designer",
+  "cv": "Download CV",
+  "hire": "Hire me",
+  "description": "A dedicated professional specializing in programming and design, whose passion lies in creating innovative and engaging experiences.",
+  "link": "/curriculum.pdf",
+
+  "xp": "Experience",
+  "formation": "Graduations",
+  "skills": "Skills",
+
+  "abt": "More about me",
+  "abtText": "I'm a front end developer passionate about creating interactive and responsive applications. I have solid experience in Next.js, Typescript, JavaScript, React, Node.js, Strapi and Git. I'm a fast learner and always looking to expand my knowledge and improve my skills. I'm collaborative by nature and feel motivated when collaborating with other professionals to develop high-impact applications.",
+  "education": "Education",
+  "certifications": "Certifications",
+  "versioning": "Code versioning",
+  "methodologies": "Agile Methodologies",
+  "responsiveDesign": "Responsive Design",
+  "pos": "Postgraduate Degree in Full Stack Development",
+  "mba": "MBA in Software Engineering",
+  "graduation": "Bachelor's Degree in Interaction Design",
+
+  "projectsTitle": "My projects",
+  "projectOneDescription": "Era Principle is a Next.js streetwear website that combines urban fashion with augmented reality (AR) technology, offering users an immersive experience. The brand seeks to transcend physical boundaries and create a unique stylistic universe where fashion and technology merge to create something truly innovative.",
+  "projectTwoDescription": "The horse management system for equestrian centers is a comprehensive platform developed using React and Node.js technologies. Designed to facilitate equine management and tracking, this application is designed to streamline operations, ensure proper horse care, and drive equestrian center success.",
+  "projectTreeDescription": "The UX/UI design for the camping agency's travel app aims to deliver an engaging, user-centric digital experience that not only simplifies the planning and booking process but also inspires a deeper connection with nature and the community of campers around the world.",
+
+  "contact": "Lets get in touch",
+  "contactDescription": "I'm currently looking for opportunities, and my inbox is always open. If you have any questions or just want to say hi, I'll do my best to get back to you!",
+  "email": "Your email",
+  "emailHolder": "youremail@email.com",
+  "subject": "Subject",
+  "subjectHolder": "Just saying hello",
+  "message": "Message",
+  "messageHolder": "Lets talk about...",
+  "contactButton": "Send Message",
+  "emailSuccessMessage": "Message sent successfully!",
+
+  "menuAbout": "About",
+  "menuProjects": "Projects",
+  "menuContact": "Contact",
+  "menuPortuguese": "Portuguese",
+  "menuEnglish": "English"
+}

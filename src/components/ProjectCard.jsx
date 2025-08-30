@@ -2,6 +2,7 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
@@ -13,18 +14,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-4 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <CodeBracketIcon
-              tIcon
-              className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white"
-            />
+            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white" />
           </Link>
           <Link
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <EyeIcon
-              tIcon
-              className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white"
-            />
+            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white" />
           </Link>
         </div>
       </div>
