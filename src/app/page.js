@@ -1,10 +1,10 @@
-import HeroSection from '@/components/HeroSection'
-import Navbar from '@/components/Navbar'
-import AboutSection from '@/components/AboutSection'
-import ProjectsSection from '@/components/ProjectsSection'
-import EmailSection from '@/components/EmailSection'
-import Footer from '@/components/Footer'
-import AchievementsSection from '@/components/AchievementsSection'
+import HeroSection from "../components/HeroSection.jsx";
+import Navbar from "../components/Navbar.jsx";
+import AboutSection from "../components/AboutSection.jsx";
+import ProjectsSection from "../components/ProjectsSection.jsx";
+import EmailSection from "../components/EmailSection.jsx";
+import Footer from "../components/Footer.jsx";
+import AchievementsSection from "../components/AchievementsSection.jsx";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <ProjectsSection />
         <EmailSection />
         <Footer />
-      </div>{' '}
+      </div>
     </main>
-  )
+  );
 }
