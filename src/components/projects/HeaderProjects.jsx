@@ -8,7 +8,7 @@ const ProjectHeader = ({ title, description, backgroundImage }) => {
         src={backgroundImage}
         alt={title}
         fill
-        className="object-cover rounded-[32px]"
+        className="object-cover w-full rounded-[32px]"
         priority
       />
 

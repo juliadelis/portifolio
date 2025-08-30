@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const CaseStudyScroll = () => {
+const CaseStudyScroll = ({ about, challange, solution }) => {
   const sections = useMemo(
     () => [
       {
@@ -11,12 +11,7 @@ const CaseStudyScroll = () => {
         title: "Sobre",
         content: (
           <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              vehicula erat sed arcu vulputate, in dictum nunc porttitor. Morbi
-              vulputate pretium imperdiet. Sed dignissim odio sed lectus
-              scelerisque vehicula.
-            </p>
+            <p>{about}</p>
           </div>
         ),
       },
@@ -25,12 +20,7 @@ const CaseStudyScroll = () => {
         title: "Desafio",
         content: (
           <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              vehicula erat sed arcu vulputate, in dictum nunc porttitor. Morbi
-              vulputate pretium imperdiet. Sed dignissim odio sed lectus
-              scelerisque vehicula.
-            </p>
+            <p>{challange}</p>
           </div>
         ),
       },
@@ -39,12 +29,7 @@ const CaseStudyScroll = () => {
         title: "Solução",
         content: (
           <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              vehicula erat sed arcu vulputate, in dictum nunc porttitor. Morbi
-              vulputate pretium imperdiet. Sed dignissim odio sed lectus
-              scelerisque vehicula.
-            </p>
+            <p>{solution}</p>
           </div>
         ),
       },
