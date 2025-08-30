@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -9,24 +10,31 @@ const AnimatedNumbers = dynamic(
   { ssr: false }
 );
 
-const achiementsList = [
-  {
-    metric: "Experiência",
-    value: "4",
-    postfix: "+",
-  },
-  {
-    metric: "Formações",
-    value: "3",
-  },
-  {
-    metric: "Competências",
-    value: "10",
-    postfix: "+",
-  },
-];
-
 const AchievementsSection = () => {
+  const { t } = useTranslation(["translation"]);
+
+  const xp = t("xp");
+
+  const formation = t("formation");
+  const skills = t("skills");
+
+  const achiementsList = [
+    {
+      metric: xp,
+      value: "5",
+      postfix: "+",
+    },
+    {
+      metric: formation,
+      value: "3",
+    },
+    {
+      metric: skills,
+      value: "10",
+      postfix: "+",
+    },
+  ];
+
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="border-[#33353F] border rounded-md py-8 px-16 flex flex-col sm:flex-row gap-8 sm:gap-0 items-center justify-between">

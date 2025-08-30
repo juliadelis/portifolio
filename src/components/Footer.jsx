@@ -7,6 +7,7 @@ const Footer = () => {
       {" "}
       <div className="container p-12 flex justify-between">
         <Image
+          alt="julia"
           className="rounded mb-4 mr-8 lg:mr-0 lg:mb-0"
           src="/images/jdelis.svg"
           width={100}

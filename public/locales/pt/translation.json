@@ -1,0 +1,45 @@
+{
+  "header": "Ola, eu sou",
+  "designer": "Designer de Interação",
+  "cv": "Baixar CV",
+  "hire": "Me contrate",
+  "description": "Uma profissional dedicada, especializada em programação e design, cuja paixão reside em criar experiências inovadoras e envolventes.",
+  "link": "/curriculo.pdf",
+
+  "xp": "Experiência",
+  "formation": "Formações",
+
+  "skills": "Competências",
+  "abt": "Mais sobre mim",
+  "abtText": "Sou uma desenvolvedora front end apaixonada por criar aplicações interativas e responsivas. Possuo experiência sólida em Next.js, Typescript, JavaScript, React, Node.js, Strapi, HTML, CSS e Git. Aprendo rápido e estou sempre buscando ampliar meu conhecimento e aprimorar minhas habilidades. Sou colaborativa por natureza e me sinto motivada ao colaborar com outros profissionais para desenvolver aplicações de alto impacto.",
+  "education": "Educação",
+  "certifications": "Certificações",
+  "versioning": "Vercionamento",
+  "methodologies": "Metodologias Ágeis",
+  "responsiveDesign": "Design responsivo",
+  "pos": "Pós Graduação em Desenvolvimento Full Stack",
+  "mba": "MBA em Engenharia de Software",
+  "graduation": "Graduação em Design de Interação",
+
+  "projectsTitle": "Meus projetos",
+  "projectOneDescription": "O Era Principle é um site em Next.js de streetwear que combina moda urbana com tecnologia de realidade aumentada (RA), oferecendo uma experiência imersiva aos usuários. A marca busca transcender fronteiras físicas e criar um universo estilístico único, onde a moda e a tecnologia se fundem para criar algo verdadeiramente inovador.",
+  "projectTwoDescription": "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
+  "projectTreeDescription": "O projeto de UX/UI para o aplicativo de viagens da agência de camping visa proporcionar uma experiência digital envolvente e centrada no usuário, que não apenas simplifica o processo de planejamento e reserva, mas também inspira uma conexão mais profunda com a natureza e a comunidade de campistas em todo o mundo.",
+
+  "contact": "Vamos entrar em contato",
+  "contactDescription": "Atualmente estou em busca de oportunidades, minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para te retornar!",
+  "email": "Seu email",
+  "emailHolder": "seuemail@email.com",
+  "subject": "Assunto",
+  "subjectHolder": "Apenas dando um oi",
+  "message": "Mensagem",
+  "messageHolder": "Vamos falar sobre...",
+  "contactButton": "Enviar Mensagem",
+  "emailSuccessMessage": "Mensagem enviada com sucesso!",
+
+  "menuAbout": "Sobre",
+  "menuProjects": "Projetos",
+  "menuContact": "Contato",
+  "menuPortuguese": "Português",
+  "menuEnglish": "Inglês"
+}
