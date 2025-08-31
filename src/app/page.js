@@ -1,6 +1,6 @@
 import HeroSectionNew from "../components/HeroSectionNew.jsx";
 import Navbar from "../components/Navbar.jsx";
-import AboutSection from "../components/AboutSection.jsx";
+import AboutSectionNew from "../components/AboutSectionNew.jsx";
 import ProjectsSection from "../components/ProjectsSection.jsx";
 import EmailSection from "../components/EmailSection.jsx";
 import Footer from "../components/Footer.jsx";
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="container mt-24 px-4 mx-auto py-4">
         <HeroSectionNew />
         {/* <AchievementsSection /> */}
-        <AboutSection />
+        <AboutSectionNew />
         <ProjectsSection />
         <EmailSection />
         <Footer />
