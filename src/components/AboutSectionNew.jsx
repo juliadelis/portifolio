@@ -89,7 +89,7 @@ const AboutSectionNew = () => {
     });
   };
   return (
-    <section id="about" className="text-white ">
+    <section id="about" className="text-[#B1B1B1] ">
       <div className="grid grid-cols-1 lg:grid-cols-12 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="col-span-4">
           <Image
@@ -100,7 +100,7 @@ const AboutSectionNew = () => {
           />
         </div>
         <div className="col-span-7 mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">{t("abt")}</h2>
+          <h2 className="text-4xl font-bold text-[#D9D9D9] mb-4">{t("abt")}</h2>
           <p className="text-base md:text-lg ">{t("abtText")}</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
