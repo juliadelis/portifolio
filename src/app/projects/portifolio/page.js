@@ -10,7 +10,7 @@ export default function Portifolio() {
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto py-4">
         <ProjectHeader
           title={"JDelis"}
           description={
@@ -18,7 +18,7 @@ export default function Portifolio() {
           }
           backgroundImage={backgroundImage}
         />
-        <div className="container mx-auto mt-10 px-12 py-12">
+        <div className="container mx-auto mt-10  py-12">
           <CaseStudyScroll
             about={
               "Este portfólio foi desenvolvido para traduzir minha trajetória como Designer de Interação e minha atuação atual como Desenvolvedora Front-End. A proposta é apresentar meus projetos de forma que transmita os pilares que orientam meu trabalho: criatividade, interatividade, dinamismo e experiências que engajam. A identidade visual do site foi criada do zero, refletindo meu olhar tanto de design quanto de desenvolvimento."
