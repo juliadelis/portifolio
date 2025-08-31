@@ -10,7 +10,7 @@ const HeroSectionNew = () => {
   const { t } = useTranslation(["translation"]);
 
   const cv = t("cv");
-  const hire = t("hire");
+  const contactMe = t("contactMe");
 
   return (
     <section className="lg:py-16">
@@ -19,8 +19,8 @@ const HeroSectionNew = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center justify-self-start">
-          <h1 className="text-white mb-4 text-[4xl] sm:text-5xl lg:text-[55px] lg:leading-normal font-extrabold ">
+          className="col-span-7 place-self-center justify-self-start">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-[55px] lg:leading-normal font-extrabold ">
             <span className="text-[#DC2626]">{t("header")}</span>
             <br />
             <TypeAnimation
@@ -44,11 +44,8 @@ const HeroSectionNew = () => {
             {t("description")}
           </p>
           <div>
-            <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-r  from-[#AB2C31] to-[#360E0F] hover:bg-slate-200">
-              <Link href="https://www.linkedin.com/in/juliadelis/">{hire}</Link>
-            </button>
-            <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full bg-transparent border border-[#AB2C31] hover:bg-[#360E0F] text-white  mt-3">
-              <Link href={t("link")}>{cv}</Link>
+            <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-r  bg-[#DC2626] hover:bg-slate-200">
+              <Link href="/#contact">{contactMe}</Link>
             </button>
           </div>
         </motion.div>
@@ -56,14 +53,14 @@ const HeroSectionNew = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0">
-          <div className="relative bg-[#181818] rounded-full w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]">
+          className="col-span-5 place-self-center lg:place-self-end mt-4 lg:mt-0">
+          <div className="relative bg-[#181818] rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="/images/eu-hd-sem-circulo.png"
+              src="/images/hero_image_jd.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </motion.div>
