@@ -1,25 +1,39 @@
-"use client";
-import Navbar from "../../../components/Navbar";
+import Navbar from "../../../components/Navbar.jsx";
 import ProjectHeader from "../../../components/projects/HeaderProjects.jsx";
+import backgroundImage from "../../../../public/images/projects/details/era/era_principle_cover.png";
 import CaseStudyScroll from "../../../components/projects/CaseStudyScroll.jsx";
 import LogotypeProjects from "../../../components/projects/LogotypeProjects.jsx";
-import backgroundImage from "../../../../public/images/projects/details/jdelis/bgimage_jdelis_details.png";
-import logoImage from "../../../../public/images/jdelis.svg";
+import logoImage from "../../../../public/images/projects/details/era/era_logotype.svg";
+import GalleryEra from "./gallery/GalleryEra.jsx";
+import LogoGalleryEra from "./logoGallery/GalleryEra.jsx";
 
-export default function Portifolio() {
-  const tags = ["Web Design", "React", "Javascript", "Content", "Logo"];
+export default function EraPrincipal() {
+  const tags = [
+    "Web Design",
+    "React",
+    "Javascript",
+    "Content",
+    "Logo",
+    "UX/UI",
+    "Branding",
+  ];
+
+  const desc =
+    "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam.";
+
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
-      <div className="container mt-24 mx-auto py-2">
-        <ProjectHeader
-          title={"JDelis"}
-          description={
-            "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam."
-          }
-          backgroundImage={backgroundImage}
-          tags={tags}
-        />
+      <div className=" mt-24 mx-auto py-4">
+        <div className="container mx-auto">
+          <ProjectHeader
+            title={"ERA Principle"}
+            description={desc}
+            backgroundImage={backgroundImage}
+            tags={tags}
+          />
+        </div>
+
         <div className="container mx-auto mt-10  py-12">
           <CaseStudyScroll
             about={
@@ -31,22 +45,30 @@ export default function Portifolio() {
             solution={
               "A solução foi desenvolver uma identidade visual própria que unisse estética e funcionalidade, refletindo minha forma de trabalhar e me comunicar. Optei por um design moderno e interativo, que favorece a navegação fluida e a imersão em cada projeto. Cores, tipografia e composições foram pensadas para transmitir dinamismo e criatividade, enquanto a estrutura do site valoriza a clareza e a experiência do usuário. Assim, este portfólio se tornou mais do que uma coleção de trabalhos: é também a expressão da minha jornada e da maneira como enxergo a criação digital."
             }
-            sidebarColor={"rgb(220, 38, 38)"}
-            underlineColor={"rgba(220,38,38,0.3)"}
+            sidebarColor={"#A842F9"}
+            underlineColor={"rgb(168, 66, 249, 0.3)"}
           />
         </div>
 
-        <div className="mt-24">
+        <div className="container mx-auto mt-24">
           <LogotypeProjects
-            chapter={"Logo"}
-            title={"Incorporando identidade"}
+            chapter={"Logotype"}
+            title={"Intertwined Identity"}
             description={
-              "O logotipo combina elegância e personalidade através de uma tipografia sofisticada e fluida. O contraste entre curvas suaves e traços marcantes traduz os pilares da minha identidade: criatividade, dinamismo e autenticidade. Essa composição equilibra o olhar artístico do design com a precisão do desenvolvimento, transmitindo uma presença moderna e confiante que reflete minha jornada."
+              "With a unique typographic logo and the key element of motion design, we seek to convey the idea of innovation. The movement of the intertwined logo evokes a sense of interaction and also pays tribute to streetwear, adding a graffiti-inspired touch."
             }
             index="01"
             className="min-h-screen"
             backgroundImage={logoImage}
           />
+        </div>
+
+        <div>
+          <GalleryEra />
+        </div>
+
+        <div>
+          <LogoGalleryEra />
         </div>
       </div>
     </main>
