@@ -3,7 +3,13 @@
 import { useEffect, useMemo, useRef, useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const CaseStudyScroll = ({ about, challange, solution }) => {
+const CaseStudyScroll = ({
+  about,
+  challange,
+  solution,
+  sidebarColor,
+  underlineColor,
+}) => {
   const sections = useMemo(
     () => [
       {
@@ -73,13 +79,13 @@ const CaseStudyScroll = ({ about, challange, solution }) => {
             <div className="absolute rounded-full left-12 top-2 bottom-2 w-[5px] bg-[#D9D9D9]" />
             {/* barra de progresso */}
             <motion.div
-              className="absolute rounded-full left-12 w-[5px] bg-[rgb(220,38,38)]"
+              className={`absolute rounded-full left-12 w-[5px]`}
+              style={{ backgroundColor: sidebarColor, top: 8 }}
               initial={{ height: 0 }}
               animate={{
                 height: `${((activeIndex + 1) / sections.length) * 100}%`,
               }}
               transition={{ type: "spring", stiffness: 120, damping: 20 }}
-              style={{ top: 8 }}
             />
             {/* <nav className="flex flex-col gap-2">
               {sections.map((s, idx) => {
@@ -136,7 +142,8 @@ const CaseStudyScroll = ({ about, challange, solution }) => {
                 sectionRefs.current[s.id] = el;
               }}
               index={idx}
-              title={s.title}>
+              title={s.title}
+              underlineColor={underlineColor}>
               {s.content}
             </Section>
           ))}
@@ -146,32 +153,39 @@ const CaseStudyScroll = ({ about, challange, solution }) => {
   );
 };
 
-const Section = forwardRef(({ id, title, index, children }, ref) => {
-  return (
-    <section
-      id={id}
-      ref={ref}
-      className="scroll-mt-24 py-24 first:pt-0 last:pb-32">
-      <motion.h2
-        className="text-3xl md:text-[32px] font-semibold tracking-tight text-[#1E1E1E]"
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ type: "spring", stiffness: 120, damping: 18 }}>
-        {title}
-      </motion.h2>
-      <motion.div
-        className="mt-6 md:text-[18px] text-[#1E1E1E]/80"
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.45 }}
-        transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 * index }}>
-        {children}
-      </motion.div>
-      <div className="mt-12 h-px w-full bg-gradient-to-r from-[rgb(220,38,38)]/30 via-transparent to-transparent" />
-    </section>
-  );
-});
+const Section = forwardRef(
+  ({ id, title, index, children, underlineColor }, ref) => {
+    return (
+      <section
+        id={id}
+        ref={ref}
+        className="scroll-mt-24 py-24 first:pt-0 last:pb-32">
+        <motion.h2
+          className="text-3xl md:text-[32px] font-semibold tracking-tight text-[#1E1E1E]"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ type: "spring", stiffness: 120, damping: 18 }}>
+          {title}
+        </motion.h2>
+        <motion.div
+          className="mt-6 md:text-[18px] text-[#1E1E1E]/80"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.45 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 * index }}>
+          {children}
+        </motion.div>
+        <div
+          className="mt-12 h-px w-full bg-gradient-to-r  via-transparent to-transparent"
+          style={{
+            backgroundImage: `linear-gradient(to right, ${underlineColor} 30%, transparent)`,
+          }}
+        />
+      </section>
+    );
+  }
+);
 
 Section.displayName = "Section";
 

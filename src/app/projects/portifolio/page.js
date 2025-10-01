@@ -7,6 +7,7 @@ import backgroundImage from "../../../../public/images/projects/details/jdelis/b
 import logoImage from "../../../../public/images/jdelis.svg";
 
 export default function Portifolio() {
+  const tags = ["Web Design", "React", "Javascript", "Content", "Logo"];
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
@@ -17,6 +18,7 @@ export default function Portifolio() {
             "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam."
           }
           backgroundImage={backgroundImage}
+          tags={tags}
         />
         <div className="container mx-auto mt-10  py-12">
           <CaseStudyScroll
@@ -29,6 +31,8 @@ export default function Portifolio() {
             solution={
               "A solução foi desenvolver uma identidade visual própria que unisse estética e funcionalidade, refletindo minha forma de trabalhar e me comunicar. Optei por um design moderno e interativo, que favorece a navegação fluida e a imersão em cada projeto. Cores, tipografia e composições foram pensadas para transmitir dinamismo e criatividade, enquanto a estrutura do site valoriza a clareza e a experiência do usuário. Assim, este portfólio se tornou mais do que uma coleção de trabalhos: é também a expressão da minha jornada e da maneira como enxergo a criação digital."
             }
+            sidebarColor={"rgb(220, 38, 38)"}
+            underlineColor={"rgba(220,38,38,0.3)"}
           />
         </div>
 
