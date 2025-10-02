@@ -83,7 +83,7 @@ const Navbar = ({ theme = "dark" }) => {
   useSmoothScroll();
   return (
     <nav
-      className={`fixed mx-auto top-0 left-0 right-0 z-10 bg-opacity-100 border-b ${palette.bgBase} ${palette.borderB}`}>
+      className={`fixed mx-auto top-0 left-0 right-0 z-30 bg-opacity-100 border-b ${palette.bgBase} ${palette.borderB}`}>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}

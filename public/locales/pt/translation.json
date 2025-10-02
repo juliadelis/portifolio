@@ -23,7 +23,8 @@
   "graduation": "Graduação em Design de Interação",
 
   "projectsTitle": "Meus projetos",
-  "projectOneDescription": "O Era Principle é um site em Next.js de streetwear que combina moda urbana com tecnologia de realidade aumentada (RA), oferecendo uma experiência imersiva aos usuários. A marca busca transcender fronteiras físicas e criar um universo estilístico único, onde a moda e a tecnologia se fundem para criar algo verdadeiramente inovador.",
+  "projectsDescription": "Uma coleção de projetos criados para explorar, desafiar e criar experiências que conectam.",
+  "projectOneDescription": "O Princípio ERA não é apenas moda. É um convite para adentrar o futuro do vestuário — onde tecnologia e estilo convergem por meio da Realidade Aumentada.",
   "projectTwoDescription": "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
   "projectTreeDescription": "O projeto de UX/UI para o aplicativo de viagens da agência de camping visa proporcionar uma experiência digital envolvente e centrada no usuário, que não apenas simplifica o processo de planejamento e reserva, mas também inspira uma conexão mais profunda com a natureza e a comunidade de campistas em todo o mundo.",
 
@@ -42,5 +43,18 @@
   "menuProjects": "Projetos",
   "menuContact": "Contato",
   "menuPortuguese": "Português",
-  "menuEnglish": "Inglês"
+  "menuEnglish": "Inglês",
+
+  "projectsAbout": "Sobre",
+  "projectsSolution": "Solução",
+  "projectsChallenge": "Desafio",
+  "projectsLogotype": "Logotipo",
+
+  "PortifolioPageTitle": "JDelis",
+  "PortifolioPageDescription": "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam.",
+  "PortifolioPageAbout": "Este portfólio foi desenvolvido para traduzir minha trajetória como Designer de Interação e minha atuação atual como Desenvolvedora Front-End. A proposta é apresentar meus projetos de forma que transmita os pilares que orientam meu trabalho: criatividade, interatividade, dinamismo e experiências que engajam. A identidade visual do site foi criada do zero, refletindo meu olhar tanto de design quanto de desenvolvimento.",
+  "PortifolioPageChallenge": "O maior desafio foi criar uma identidade visual que representasse quem eu sou e como quero me apresentar ao mundo. Era importante equilibrar meu lado criativo como designer e minha atuação técnica como desenvolvedora, construindo uma linguagem que fosse clara, envolvente e autêntica. Além disso, o site precisava ser ao mesmo tempo um espaço de autoexpressão e uma vitrine profissional para destacar meus projetos e minhas habilidades.",
+  "PortifolioPageSolution": "A solução foi desenvolver uma identidade visual própria que unisse estética e funcionalidade, refletindo minha forma de trabalhar e me comunicar. Optei por um design moderno e interativo, que favorece a navegação fluida e a imersão em cada projeto. Cores, tipografia e composições foram pensadas para transmitir dinamismo e criatividade, enquanto a estrutura do site valoriza a clareza e a experiência do usuário. Assim, este portfólio se tornou mais do que uma coleção de trabalhos: é também a expressão da minha jornada e da maneira como enxergo a criação digital.",
+  "PortifolioPageLogoTitle": "Incorporando identidade",
+  "PortifolioPageLogoDescription": "O logotipo combina elegância e personalidade através de uma tipografia sofisticada e fluida. O contraste entre curvas suaves e traços marcantes traduz os pilares da minha identidade: criatividade, dinamismo e autenticidade. Essa composição equilibra o olhar artístico do design com a precisão do desenvolvimento, transmitindo uma presença moderna e confiante que reflete minha jornada."
 }

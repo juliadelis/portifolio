@@ -23,7 +23,8 @@
   "graduation": "Bachelor's Degree in Interaction Design",
 
   "projectsTitle": "My projects",
-  "projectOneDescription": "Era Principle is a Next.js streetwear website that combines urban fashion with augmented reality (AR) technology, offering users an immersive experience. The brand seeks to transcend physical boundaries and create a unique stylistic universe where fashion and technology merge to create something truly innovative.",
+  "projectsDescription": "A collection of projects shaped by curiosity, design, and code. Built to explore, to challenge, and to create experiences that connect.",
+  "projectOneDescription": "ERA Principle is not just fashion. It is an invitation to step inside the future of clothing—where technology and style converge through Augmented Reality.",
   "projectTwoDescription": "The horse management system for equestrian centers is a comprehensive platform developed using React and Node.js technologies. Designed to facilitate equine management and tracking, this application is designed to streamline operations, ensure proper horse care, and drive equestrian center success.",
   "projectTreeDescription": "The UX/UI design for the camping agency's travel app aims to deliver an engaging, user-centric digital experience that not only simplifies the planning and booking process but also inspires a deeper connection with nature and the community of campers around the world.",
 
@@ -42,5 +43,18 @@
   "menuProjects": "Projects",
   "menuContact": "Contact",
   "menuPortuguese": "Portuguese",
-  "menuEnglish": "English"
+  "menuEnglish": "English",
+
+  "projectsAbout": "About",
+  "projectsSolution": "Solution",
+  "projectsChallenge": "Challenge",
+  "projectsLogotype": "Logotype",
+
+  "PortifolioPageTitle": "JDelis",
+  "PortifolioPageDescription": "Born from my passion for design and technology, this project reflects my journey as an Interaction Designer and Front-End Developer, blending creativity, interactivity, and digital experiences that captivate.",
+  "PortifolioPageAbout": "This portfolio was born from the desire to tell my story, from my roots as an Interaction Designer to my current path as a Front-End Developer. Each project is presented to reflect the values that guide my work: creativity, interactivity, dynamism, and experiences that truly connect. The website’s visual identity was crafted from the ground up, embodying both my design vision and my developer’s mindset.",
+  "PortifolioPageChallenge": "The biggest challenge was shaping a visual identity that truly reflects who I am and how I aspire to be seen in the world. I sought to balance the creativity of a designer with the precision of a developer, crafting a language that feels clear, engaging, and authentic. More than a portfolio, this website became both a canvas for self-expression and a stage to showcase my projects and skills.",
+  "PortifolioPageSolution": "The solution was to develop a unique visual identity that combined aesthetics and functionality, reflecting the way I work and communicate. I chose a modern and interactive design that favors fluid navigation and immersion in each project. Colors, typography, and layouts were carefully designed to convey dynamism and creativity, while the site’s structure emphasizes clarity and user experience. In this way, the portfolio became more than just a collection of works: it is also an expression of my journey and my vision of digital creation.",
+  "PortifolioPageLogoTitle": "Incorporating identity",
+  "PortifolioPageLogoDescription": "The logo merges elegance with personality, shaped by a refined and fluid typography. The interplay of gentle curves and bold lines embodies the pillars of my identity: creativity, dynamism, and authenticity. It strikes a balance between the artistry of design and the precision of development, projecting a modern, confident presence that tells the story of my journey."
 }

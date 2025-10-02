@@ -1,5 +1,5 @@
 "use client";
-
+import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useRef, useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,38 +10,37 @@ const CaseStudyScroll = ({
   sidebarColor,
   underlineColor,
 }) => {
-  const sections = useMemo(
-    () => [
-      {
-        id: "about",
-        title: "Sobre",
-        content: (
-          <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>{about}</p>
-          </div>
-        ),
-      },
-      {
-        id: "challenge",
-        title: "Desafio",
-        content: (
-          <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>{challange}</p>
-          </div>
-        ),
-      },
-      {
-        id: "solution",
-        title: "Solução",
-        content: (
-          <div className="space-y-4 text-[#1E1E1E]/80">
-            <p>{solution}</p>
-          </div>
-        ),
-      },
-    ],
-    []
-  );
+  const { t } = useTranslation(["translation"]);
+
+  const sections = [
+    {
+      id: "about",
+      title: t("projectsAbout"),
+      content: (
+        <div className="space-y-4 text-[#1E1E1E]/80">
+          <p>{about}</p>
+        </div>
+      ),
+    },
+    {
+      id: "challenge",
+      title: t("projectsChallenge"),
+      content: (
+        <div className="space-y-4 text-[#1E1E1E]/80">
+          <p>{challange}</p>
+        </div>
+      ),
+    },
+    {
+      id: "solution",
+      title: t("projectsSolution"),
+      content: (
+        <div className="space-y-4 text-[#1E1E1E]/80">
+          <p>{solution}</p>
+        </div>
+      ),
+    },
+  ];
 
   const [active, setActive] = useState(sections[0].id);
   const sectionRefs = useRef({});
