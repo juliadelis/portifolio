@@ -6,6 +6,7 @@ import LogotypeProjects from "../../../components/projects/LogotypeProjects.jsx"
 import logoImage from "../../../../public/images/projects/details/era/era_logotype.svg";
 import GalleryEra from "./gallery/GalleryEra.jsx";
 import LogoGalleryEra from "./logoGallery/GalleryEra.jsx";
+import ColorsSection from "./colors/ColorsSection.jsx";
 
 export default function EraPrincipal() {
   const tags = [
@@ -69,6 +70,9 @@ export default function EraPrincipal() {
 
         <div>
           <LogoGalleryEra />
+        </div>
+        <div>
+          <ColorsSection />
         </div>
       </div>
     </main>

@@ -1,0 +1,17 @@
+export function StarIconLogo({ color, stroke }) {
+  return (
+    <svg
+      width="92"
+      height="93"
+      viewBox="0 0 92 93"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M46.3558 3C39.5051 29.0245 23.8728 40.8148 2.57031 46.6828C26.8614 53.742 38.6249 66.9074 46.3558 90.3656C52.3808 68.0443 66.9759 53.4833 90.1412 46.6828C65.7955 39.1607 51.1867 24.6133 46.3558 3Z"
+        fill={color}
+        stroke={stroke}
+        stroke-miterlimit="10"
+      />
+    </svg>
+  );
+}

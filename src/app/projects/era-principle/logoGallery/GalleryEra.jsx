@@ -39,10 +39,10 @@ const LogoGalleryEra = () => {
         <Image src={arame2} alt="arame" priority className="w-full" />
       </div>
       <div className="relative grid grid-cols-1 md:grid-cols-12">
-        <div className="col-span-6 bg-[#A842F9] py-[97px] ">
+        <div className="col-span-6  bg-[#A842F9] py-[97px]">
           <Image src={Gallery5} alt="galeria-1" className="mx-auto" priority />
         </div>
-        <div className="col-span-3 bg-[#1B59F8]  py-[97px] ">
+        <div className="col-span-3 bg-[#1B59F8]  py-[97px]">
           <Image
             src={Gallery6}
             alt="galeria-2"
