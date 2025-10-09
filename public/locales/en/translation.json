@@ -61,7 +61,7 @@
   "PortifolioPageLogoDescription": "The logo merges elegance with personality, shaped by a refined and fluid typography. The interplay of gentle curves and bold lines embodies the pillars of my identity: creativity, dynamism, and authenticity. It strikes a balance between the artistry of design and the precision of development, projecting a modern, confident presence that tells the story of my journey.",
 
   "EraPageTitle": "ERA Principal",
-  "EraPageDescription": "ERA Principle is not just fashion. It is an invitation to step inside the future of clothing—where technology and style converge through Augmented Reality",
+  "EraPageDescription": "ERA Principle is not just fashion. It is an invitation to step inside the future of clothing—where technology and style converge through Augmented Reality.",
   "EraPageAbout": "Born in São Paulo as a final university project, ERA challenges the boundaries of design. We asked ourselves: what if a t-shirt could tell a story, move, and transform? The answer was AR. Through the ERA app, every piece becomes alive, glowing with interactive animations ready to be shared with the world.",
   "EraPageChallenge": "Fashion is expressive, yet static. Our challenge was to make it move, to merge the physical with the digital without losing style, elegance, or accessibility.",
   "EraPageSolution": "We developed an interactive AR experience using the Vuforia Engine in collaboration with Unity. By applying image recognition to the t-shirt’s print, we enabled a colorful, animated butterfly pattern to appear in real time. This duality between the physical (black-and-white print) and the digital (vibrant animation) creates a striking contrast and reinforces the concept of blending fashion with innovation.",
