@@ -49,7 +49,7 @@ const HeroSection = () => {
             <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-r  from-[#AB2C31] to-[#360E0F] hover:bg-slate-200">
               <Link href="https://www.linkedin.com/in/juliadelis/">{hire}</Link>
             </button>
-            <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full bg-transparent border border-[#AB2C31] hover:bg-[#360E0F] text-[F0F0F0]  mt-3">
+            <button className="px-6 font-bold py-3 w-full sm:w-fit rounded-full bg-transparent border border-[#AB2C31] hover:bg-[#360E0F] text-[#F0F0F0]  mt-3">
               <Link href={t("link")}>{cv}</Link>
             </button>
           </div>

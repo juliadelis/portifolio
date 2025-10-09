@@ -1,0 +1,32 @@
+.section {
+  height: 100vh;
+  overflow: hidden;
+
+  .container2 {
+    height: 300vh;
+    width: 100vw;
+    position: relative;
+    .stickyMask {
+      //overflow: hidden;
+      //display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      mask-image: url("../../../../../public/images/projects/details/era/star.svg");
+      mask-position: 52.35% center;
+      mask-repeat: no-repeat;
+      mask-size: 50%;
+
+      //position: sticky;
+      top: 0;
+      left: 0;
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 20;
+      }
+    }
+  }
+}

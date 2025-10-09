@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const LogoGalleryEra = () => {
   return (
-    <div className=" w-[100vw] mt-24 mb-24 py-2 relative">
+    <div className="w-full mt-24 mb-24 py-2 relative">
       <div className="absolute top-0 left-0 w-full z-20">
         <Image src={arame1} alt="arame" priority className="w-full" />
       </div>

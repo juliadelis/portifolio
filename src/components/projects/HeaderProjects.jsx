@@ -14,12 +14,12 @@ const ProjectHeader = ({ title, description, backgroundImage, tags }) => {
 
       {/* <div className="absolute inset-0 bg-black/50 rounded-[32px]" /> */}
 
-      <div className="relative grid grid-cols-1 lg:grid-cols-12 justify-between w-full  flex-wrap lg:flex-nowrap">
-        <div className="col-span-8">
+      <div className="relative gap-y-8 grid grid-cols-1 lg:grid-cols-12 justify-between w-full  flex-wrap lg:flex-nowrap">
+        <div className="col-span-8 ">
           <h2 className="text-[48px]">{title}</h2>
           <p className="text-[18px]">{description}</p>
         </div>
-        <div className="col-span-4 flex flex-wrap gap-[15px] content-end h-auto align-end justify-end">
+        <div className="col-span-4 flex flex-wrap gap-[15px] content-start md:content-end h-auto align-end xl:justify-end">
           {tags?.map((tag) => (
             <div key={tag} className="h-fit">
               <ProjectTagDetails name={tag} />

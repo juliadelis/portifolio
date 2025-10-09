@@ -1,14 +1,25 @@
+"use client";
+import { useTranslation } from "react-i18next";
 import Navbar from "../../../components/Navbar.jsx";
+import BackToTopButton from "../../../components/BackToTopButton.jsx";
 import ProjectHeader from "../../../components/projects/HeaderProjects.jsx";
 import backgroundImage from "../../../../public/images/projects/details/era/era_principle_cover.png";
 import CaseStudyScroll from "../../../components/projects/CaseStudyScroll.jsx";
-import LogotypeProjects from "../../../components/projects/LogotypeProjects.jsx";
-import logoImage from "../../../../public/images/projects/details/era/era_logotype.svg";
 import GalleryEra from "./gallery/GalleryEra.jsx";
+import BigPhoto from "./BigPhoto/BigPhoto.jsx";
 import LogoGalleryEra from "./logoGallery/GalleryEra.jsx";
 import ColorsSection from "./colors/ColorsSection.jsx";
+import WebsiteSection from "./Website/WebsiteSection.jsx";
+import EndingSection from "../../../components/projects/Ending/EndingProject.jsx";
+
+import LogotypeProjects from "../../../components/projects/LogotypeProjects.jsx";
+import logoImage from "../../../../public/images/projects/details/era/era_logotype.svg";
+import VideoSection from "./VideoSection/VideoSection.jsx";
+import photoDisplay1 from "../../../../public/images/projects/details/era/ERA_display.png";
+import photoDisplay2 from "../../../../public/images/projects/details/era/era-galery-1.webp";
 
 export default function EraPrincipal() {
+  const { t } = useTranslation(["translation"]);
   const tags = [
     "Web Design",
     "React",
@@ -19,16 +30,15 @@ export default function EraPrincipal() {
     "Branding",
   ];
 
-  const desc =
-    "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam.";
+  const desc = t("EraPageDescription");
 
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
-      <div className=" mt-24 mx-auto py-4">
-        <div className="container mx-auto">
+      <div className="w-full mt-24 mx-auto py-4">
+        <div id="project-header" className="container px-4 md:p-0 md:mx-auto">
           <ProjectHeader
-            title={"ERA Principle"}
+            title={t("EraPageTitle")}
             description={desc}
             backgroundImage={backgroundImage}
             tags={tags}
@@ -37,27 +47,19 @@ export default function EraPrincipal() {
 
         <div className="container mx-auto mt-10  py-12">
           <CaseStudyScroll
-            about={
-              "Este portfólio foi desenvolvido para traduzir minha trajetória como Designer de Interação e minha atuação atual como Desenvolvedora Front-End. A proposta é apresentar meus projetos de forma que transmita os pilares que orientam meu trabalho: criatividade, interatividade, dinamismo e experiências que engajam. A identidade visual do site foi criada do zero, refletindo meu olhar tanto de design quanto de desenvolvimento."
-            }
-            challange={
-              "O maior desafio foi criar uma identidade visual que representasse quem eu sou e como quero me apresentar ao mundo. Era importante equilibrar meu lado criativo como designer e minha atuação técnica como desenvolvedora, construindo uma linguagem que fosse clara, envolvente e autêntica. Além disso, o site precisava ser ao mesmo tempo um espaço de autoexpressão e uma vitrine profissional para destacar meus projetos e minhas habilidades."
-            }
-            solution={
-              "A solução foi desenvolver uma identidade visual própria que unisse estética e funcionalidade, refletindo minha forma de trabalhar e me comunicar. Optei por um design moderno e interativo, que favorece a navegação fluida e a imersão em cada projeto. Cores, tipografia e composições foram pensadas para transmitir dinamismo e criatividade, enquanto a estrutura do site valoriza a clareza e a experiência do usuário. Assim, este portfólio se tornou mais do que uma coleção de trabalhos: é também a expressão da minha jornada e da maneira como enxergo a criação digital."
-            }
+            about={t("EraPageAbout")}
+            challange={t("EraPageChallenge")}
+            solution={t("EraPageSolution")}
             sidebarColor={"#A842F9"}
             underlineColor={"rgb(168, 66, 249, 0.3)"}
           />
         </div>
 
-        <div className="container mx-auto mt-24">
+        <div className="container px-4 md:p-0  md:mx-auto mt-24">
           <LogotypeProjects
-            chapter={"Logotype"}
-            title={"Intertwined Identity"}
-            description={
-              "With a unique typographic logo and the key element of motion design, we seek to convey the idea of innovation. The movement of the intertwined logo evokes a sense of interaction and also pays tribute to streetwear, adding a graffiti-inspired touch."
-            }
+            chapter={t("projectsLogotype")}
+            title={t("EraPageLogoTitle")}
+            description={t("EraPageLogoDescription")}
             index="01"
             className="min-h-screen"
             backgroundImage={logoImage}
@@ -71,10 +73,26 @@ export default function EraPrincipal() {
         <div>
           <LogoGalleryEra />
         </div>
-        <div>
+        <div className="container px-4 md:p-0 mx-auto">
           <ColorsSection />
         </div>
+        <BigPhoto photo={photoDisplay1} />
+        <div className="container px-4 md:p-0 mx-auto">
+          <WebsiteSection />
+        </div>
+        <div>
+          <VideoSection />
+        </div>
+        <BigPhoto photo={photoDisplay2} />
+        <div className="container px-4 md:p-0 mx-auto">
+          <EndingSection
+            description={t("EraPageEnding")}
+            projectLink={"https://eraprincipal.vercel.app/"}
+            codeLink={"https://github.com/juliadelis/eraprincipal"}
+          />
+        </div>
       </div>
+      <BackToTopButton />
     </main>
   );
 }
