@@ -17,7 +17,7 @@ const TitleStructureProjects = ({
         <h3 className={`text-[32px] ${palette.Title} `}>{index}</h3>
         <h3 className={`text-[32px] ${palette.Title}`}>{chapter}</h3>
       </div>
-      <div className="w-[68%] flex flex-col gap-[15px] align-top content-top">
+      <div className="md:w-[68%] flex flex-col gap-[15px] align-top content-top">
         <h3 className={`text-[32px]  ${palette.textBase}`}>{title}</h3>
         <p className={`text-[18px]  ${palette.textBase}`}>{description}</p>
       </div>

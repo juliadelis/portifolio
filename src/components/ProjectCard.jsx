@@ -1,31 +1,59 @@
 "use client";
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({
+  projectLink,
+  imgUrl,
+  title,
+  description,
+  tags = [],
+}) => {
+  const { t } = useTranslation(["translation"]);
+
   return (
-    <div className="border border-[#33353f] rounded-xl">
+    <div className="rounded-[32px] overflow-hidden">
+      {/* Image + tags */}
       <div
-        className="h-52 md:72 rounded-t-xl relative group border-b border-[#33353f]"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-4 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white" />
-          </Link>
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 -cursor-pointer group-hover/link:text-white" />
-          </Link>
-        </div>
+        className="h-52 relative group bg-cover bg-center"
+        style={{ backgroundImage: `url(${imgUrl})` }}>
+        {/* soft top gradient so tags stay readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent pointer-events-none" />
+
+        {/* tags row */}
+        {tags?.length > 0 && (
+          <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
+            {tags.map((tag, i) => (
+              <span
+                key={`${tag}-${i}`}
+                className="px-3 py-1 rounded-full text-xs font-medium
+                            text-white border border-white/50
+                           backdrop-blur-[2px] shadow-sm">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
-      <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
-        <h5 className="font-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+
+      {/* body */}
+      <div className="text-[#7E7D7D] bg-[#D9D9D9] py-6 px-4">
+        <h5 className="text-[20px] font-semibold mb-2 text-[#1E1E1E]">
+          {title}
+        </h5>
+        <p className="text-[#7E7D7D] mb-4">{description}</p>
+
+        {projectLink && (
+          <Link
+            href={projectLink}
+            rel="noopener noreferrer"
+            className="flex gap-2 text-[#1E1E1E] font-medium transition-transform duration-200 hover:scale-[1.03]">
+            <IoArrowForwardCircleOutline size={27} color="#1E1E1E" />
+            <p>{t("projectsSeeMore")}</p>
+          </Link>
+        )}
       </div>
     </div>
   );

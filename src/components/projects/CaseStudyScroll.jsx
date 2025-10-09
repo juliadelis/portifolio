@@ -70,7 +70,7 @@ const CaseStudyScroll = ({
   const activeIndex = sections.findIndex((s) => s.id === active);
 
   return (
-    <div className="mx-auto max-w-6xl px-6 md:px-8">
+    <div className="md:mx-auto  w-full md:max-w-6xl px-6 md:px-8">
       <div className="grid grid-cols-1 md:grid-cols-[260px,1fr] gap-10 md:gap-16">
         <aside className="md:sticky md:top-24 md:h-[calc(100vh-6rem)]">
           <div className="relative h-full pl-6">
@@ -132,7 +132,7 @@ const CaseStudyScroll = ({
           </div>
         </aside>
         {/* Content */}
-        <main className="relative">
+        <div className="relative ">
           {sections.map((s, idx) => (
             <Section
               key={s.id}
@@ -146,7 +146,7 @@ const CaseStudyScroll = ({
               {s.content}
             </Section>
           ))}
-        </main>
+        </div>
       </div>
     </div>
   );

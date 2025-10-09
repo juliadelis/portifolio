@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "react-i18next";
 import GalleryOne from "../../../../../public/images/projects/details/era/gallery-one-era.png";
 import GalleryTwo from "../../../../../public/images/projects/details/era/gallery-two-era.png";
 import GalleryThree from "../../../../../public/images/projects/details/era/gallery-three-era.svg";
@@ -17,14 +18,14 @@ const GalleryEra = () => {
           <Image
             src={GalleryOne}
             alt="galeria-1"
+            width={560}
             className="rounded-[8px]"
-            priority
           />
           <Image
             src={GalleryTwo}
             alt="galeria-2"
+            width={560}
             className="rounded-[8px]"
-            priority
           />
         </div>
         <div className="flex flex-col gap-[46px] md:mt-[100px]">
@@ -46,13 +47,13 @@ const GalleryEra = () => {
             src={GalleryFive}
             alt="galeria-1"
             className="rounded-[8px]"
-            priority
+            width={560}
           />
           <Image
             src={GallerySix}
             alt="galeria-2"
             className="rounded-[8px]"
-            priority
+            width={560}
           />
         </div>
         <div className="flex flex-col gap-[46px] md:mt-[100px]">
@@ -60,13 +61,12 @@ const GalleryEra = () => {
             src={GallerySeven}
             alt="galeria-1"
             className="rounded-[8px]"
-            priority
+            width={560}
           />
           <Image
             src={GalleryEight}
             alt="galeria-2"
             className="rounded-[8px] relative"
-            priority
             width={560}
           />
         </div>

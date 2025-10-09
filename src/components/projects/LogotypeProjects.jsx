@@ -9,7 +9,7 @@ const LogotypeProjects = ({
   backgroundImage,
 }) => {
   return (
-    <div className=" bg-[#1E1E1E] gap-6 md:gap-28  content-center justify-center rounded-[32px] py-24 px-8 flex flex-wrap  ">
+    <div className=" bg-[#1E1E1E] gap-14 md:gap-28  content-center justify-center rounded-[32px] py-24 px-8 flex flex-wrap  ">
       <TitleStructureProjects
         index={index}
         chapter={chapter}

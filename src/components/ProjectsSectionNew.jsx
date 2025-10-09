@@ -12,38 +12,38 @@ function ProjectsSectionNew() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const projectOneDescription = t("projectOneDescription");
-  const projectTwoDescription = t("projectTwoDescription");
-  const projectTreeDescription = t("projectTreeDescription");
+  const projectOneDescription = t("EraPageDescription");
+  // const projectTwoDescription = t("projectTwoDescription");
+  // const projectTreeDescription = t("projectTreeDescription");
 
   const projectsData = [
     {
-      id: 3,
+      id: 1,
       title: "Era Principle Website",
       description: projectOneDescription,
-      image: "/images/projects/mockup-portifolio-era.png",
+      image: "/images/projects/details/era/gallery-one-era.png",
       tag: ["Tudo", "Web"],
-      gitUrl: "https://github.com/juliadelis/eraprincipal",
-      previewUrl: "https://eraprincipal.vercel.app/",
+      tags: ["Web Design", "React", "JavaScript", "Branding"],
+      link: "/projects/era-principle",
     },
-    {
-      id: 1,
-      title: "Horsing Around Website",
-      description: projectTwoDescription,
-      image: "/images/projects/mockup-portifolio-horsing_around.png",
-      tag: ["Tudo", "Web"],
-      gitUrl: "https://github.com/juliadelis/horsingAround",
-      previewUrl: "https://horsing-around.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "React Camp Website",
-      description: projectTreeDescription,
-      image: "/images/projects/mockup-portifolio-wanderer.png",
-      tag: ["Tudo", "Web"],
-      gitUrl: "https://github.com/juliadelis/wanderer",
-      previewUrl: "https://wanderer-three.vercel.app/",
-    },
+    // {
+    //   id: 1,
+    //   title: "Horsing Around Website",
+    //   description: projectTwoDescription,
+    //   image: "/images/projects/mockup-portifolio-horsing_around.png",
+    //   tag: ["Tudo", "Web"],
+    //   gitUrl: "https://github.com/juliadelis/horsingAround",
+    //   previewUrl: "https://horsing-around.vercel.app/",
+    // },
+    // {
+    //   id: 2,
+    //   title: "React Camp Website",
+    //   description: projectTreeDescription,
+    //   image: "/images/projects/mockup-portifolio-wanderer.png",
+    //   tag: ["Tudo", "Web"],
+    //   gitUrl: "https://github.com/juliadelis/wanderer",
+    //   previewUrl: "https://wanderer-three.vercel.app/",
+    // },
   ];
 
   const handleTagChange = (newTag) => {
@@ -96,8 +96,10 @@ function ProjectsSectionNew() {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              projectLink={project.link}
+              tags={project.tags}
+              // gitUrl={project.gitUrl}
+              // previewUrl={project.previewUrl}
             />
           </motion.li>
         ))}

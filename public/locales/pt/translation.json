@@ -49,6 +49,8 @@
   "projectsSolution": "Solução",
   "projectsChallenge": "Desafio",
   "projectsLogotype": "Logotipo",
+  "projectsColors": "Cores",
+  "projectsSeeMore": "Ver detalhes",
 
   "PortifolioPageTitle": "JDelis",
   "PortifolioPageDescription": "Com o objetivo de apresentar minha trajetória como Designer de Interação e Desenvolvedora Front-End, nasce esse projeto, unindo criatividade, interatividade e experiências digitais que engajam.",
@@ -56,5 +58,18 @@
   "PortifolioPageChallenge": "O maior desafio foi criar uma identidade visual que representasse quem eu sou e como quero me apresentar ao mundo. Era importante equilibrar meu lado criativo como designer e minha atuação técnica como desenvolvedora, construindo uma linguagem que fosse clara, envolvente e autêntica. Além disso, o site precisava ser ao mesmo tempo um espaço de autoexpressão e uma vitrine profissional para destacar meus projetos e minhas habilidades.",
   "PortifolioPageSolution": "A solução foi desenvolver uma identidade visual própria que unisse estética e funcionalidade, refletindo minha forma de trabalhar e me comunicar. Optei por um design moderno e interativo, que favorece a navegação fluida e a imersão em cada projeto. Cores, tipografia e composições foram pensadas para transmitir dinamismo e criatividade, enquanto a estrutura do site valoriza a clareza e a experiência do usuário. Assim, este portfólio se tornou mais do que uma coleção de trabalhos: é também a expressão da minha jornada e da maneira como enxergo a criação digital.",
   "PortifolioPageLogoTitle": "Incorporando identidade",
-  "PortifolioPageLogoDescription": "O logotipo combina elegância e personalidade através de uma tipografia sofisticada e fluida. O contraste entre curvas suaves e traços marcantes traduz os pilares da minha identidade: criatividade, dinamismo e autenticidade. Essa composição equilibra o olhar artístico do design com a precisão do desenvolvimento, transmitindo uma presença moderna e confiante que reflete minha jornada."
+  "PortifolioPageLogoDescription": "O logotipo combina elegância e personalidade através de uma tipografia sofisticada e fluida. O contraste entre curvas suaves e traços marcantes traduz os pilares da minha identidade: criatividade, dinamismo e autenticidade. Essa composição equilibra o olhar artístico do design com a precisão do desenvolvimento, transmitindo uma presença moderna e confiante que reflete minha jornada.",
+
+  "EraPageTitle": "ERA Principal",
+  "EraPageDescription": "A ERA Principle não é apenas moda. É um convite para entrar no futuro das roupas, onde tecnologia e estilo convergem por meio da Realidade Aumentada.",
+  "EraPageAbout": "Nascida em São Paulo como um projeto final de universidade, a ERA desafia os limites do design. Fizemos a nós mesmos uma pergunta: e se uma camiseta pudesse contar uma história, se mover e se transformar? A resposta foi a Realidade Aumentada. Através do aplicativo ERA, cada peça ganha vida, com animações interativas prontas para serem compartilhadas com o mundo.",
+  "EraPageChallenge": "A moda é expressiva, mas estática. Nosso desafio foi fazê-la se mover; unir o físico ao digital sem perder o estilo, a elegância ou a acessibilidade",
+  "EraPageSolution": "We developed an interactive AR experience using the Vuforia Engine in collaboration with Unity. By applying image recognition to the t-shirt’s print, we enabled a colorful, animated butterfly pattern to appear in real time. This duality between the physical (black-and-white print) and the digital (vibrant animation) creates a striking contrast and reinforces the concept of blending fashion with innovation.",
+  "EraPageLogoTitle": "Identidade Entrelaçada",
+  "EraPageLogoDescription": "Com um logotipo único e o elemento-chave do motion design, buscamos transmitir a ideia de inovação. O movimento do logotipo entrelaçado evoca uma sensação de interação e também presta homenagem ao streetwear, adicionando um toque de inspiração no grafite",
+  "EraPageColorsTitle": "Novas Realidades",
+  "EraPageColorsDescription": "A escolha das cores reflete esse equilíbrio entre contraste e energia. Oito tons ousados e vibrantes foram selecionados para se destacar sobre o preto e branco neutros, garantindo que a experiência seja ao mesmo tempo dinâmica e marcante. Juntos, eles incorporam a dualidade que está no core da ERA, simplicidade na superfície e um mundo de cor quando a tecnologia revela suas camadas ocultas.",
+  "EraPageWebsiteTitle": "Ecos da Experiência",
+  "EraPageWebsiteDescription": "O próprio site foi projetado para refletir os valores centrais da ERA: inovação, criatividade e interação. Construído com uma estrutura limpa e moderna, ele destaca tanto os aspectos físicos quanto os digitais do projeto. O motion design e os elementos interativos espelham a experiência de Realidade Aumentada, tornando a plataforma não apenas uma vitrine, mas uma extensão da visão da marca.",
+  "EraPageEnding": "ERA é mais do que um projeto — é um vislumbre do futuro da moda. Ao unir criatividade e tecnologia, buscamos inspirar novas formas de vivenciar o estilo, onde cada peça conta uma história que vai além do tecido."
 }
