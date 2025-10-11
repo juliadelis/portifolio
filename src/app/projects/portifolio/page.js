@@ -16,7 +16,14 @@ import logoImage from "../../../../public/images/jdelis.svg";
 
 export default function Portifolio() {
   const { t } = useTranslation(["translation"]);
-  const tags = ["Web Design", "React", "Javascript", "Content", "Logo"];
+  const tags = [
+    "Web Design",
+    "React",
+    "Javascript",
+    "Content",
+    "Logo",
+    "UX/UI",
+  ];
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />

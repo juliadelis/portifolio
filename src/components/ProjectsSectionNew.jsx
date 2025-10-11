@@ -30,6 +30,7 @@ function ProjectsSectionNew() {
         "Branding",
         "Content",
         "Logo",
+        "UX/UI",
       ],
       link: "/projects/portifolio",
     },
@@ -39,7 +40,7 @@ function ProjectsSectionNew() {
       description: projectEraDescription,
       image: "/images/projects/details/era/gallery-one-era.png",
       tag: ["Tudo", "Web"],
-      tags: ["Web Design", "React", "JavaScript", "Branding", "Logo"],
+      tags: ["Web Design", "React", "JavaScript", "Branding", "Logo", "UX/UI"],
       link: "/projects/era-principle",
     },
     // {
