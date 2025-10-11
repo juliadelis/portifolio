@@ -19,7 +19,7 @@ export default function Portifolio() {
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
-      <div className="container mt-24 mx-auto py-2">
+      <div className="container mt-24 px-4 mx-auto py-2">
         <ProjectHeader
           title={t("PortifolioPageTitle")}
           description={t("PortifolioPageDescription")}
@@ -27,7 +27,7 @@ export default function Portifolio() {
           tags={tags}
         />
       </div>
-      <div className="container mx-auto mt-10  py-12">
+      <div className="container px-4 mx-auto mt-10  py-12">
         <CaseStudyScroll
           about={t("PortifolioPageAbout")}
           challange={t("PortifolioPageChallenge")}
@@ -37,7 +37,7 @@ export default function Portifolio() {
         />
       </div>
 
-      <div className="container mt-24 mx-auto py-2">
+      <div className="container px-4 mt-24 mx-auto py-2">
         <LogotypeProjects
           chapter={t("projectsLogotype")}
           title={t("PortifolioPageLogoTitle")}
@@ -47,19 +47,19 @@ export default function Portifolio() {
           backgroundImage={logoImage}
         />
       </div>
-      <div className="container mt-24 mx-auto py-2">
+      <div className="container px-4 mt-24 mx-auto py-2">
         <LogoGalleryPortifolio />
       </div>
-      <div>
+      <div className="px-4">
         <ColorsPortifolioSection />
       </div>
-      <div>
+      <div className="px-4">
         <WebsiteSection />
       </div>
       <div>
         <WebGallerySection />
       </div>
-      <div className="container mt-[-200px] px-4 md:p-0 mx-auto mb-20">
+      <div className="container mt-[-100px] md:mt-[-200px] px-4  mx-auto mb-20">
         <EndingSection
           description={t("EraPageEnding")}
           colorCode="#DC2626"
