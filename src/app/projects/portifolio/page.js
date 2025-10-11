@@ -9,6 +9,7 @@ import ColorsPortifolioSection from "./ColorsSection/ColorsSection.jsx";
 import WebsiteSection from "./Website/WebsiteSection.jsx";
 import WebGallerySection from "./WebGallery/WebsiteSection.jsx";
 import EndingSection from "../../../components/projects/Ending/EndingProject.jsx";
+import BackToTopButton from "../../../components/BackToTopButton.jsx";
 
 import backgroundImage from "../../../../public/images/projects/details/jdelis/bgimage_jdelis_details_2.png";
 import logoImage from "../../../../public/images/jdelis.svg";
@@ -19,7 +20,7 @@ export default function Portifolio() {
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
       <Navbar theme="light" />
-      <div className="container mt-24 px-4 mx-auto py-2">
+      <div id="project-header" className="container mt-24 px-4 mx-auto py-2">
         <ProjectHeader
           title={t("PortifolioPageTitle")}
           description={t("PortifolioPageDescription")}
@@ -61,11 +62,12 @@ export default function Portifolio() {
       </div>
       <div className="container mt-[-100px] md:mt-[-200px] px-4  mx-auto mb-20">
         <EndingSection
-          description={t("EraPageEnding")}
+          description={t("PortifolioPageEnding")}
           colorCode="#DC2626"
           codeLink={"https://github.com/juliadelis/portifolio"}
         />
       </div>
+      <BackToTopButton color="#AE2A2A" hoverColor="#801616" />
     </main>
   );
 }

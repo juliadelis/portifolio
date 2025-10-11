@@ -14,7 +14,7 @@ const ProjectCard = ({
   const { t } = useTranslation(["translation"]);
 
   return (
-    <div className="rounded-[32px] overflow-hidden">
+    <div className="rounded-[32px] overflow-hidden h-full">
       {/* Image + tags */}
       <div
         className="h-52 relative group bg-cover bg-center"
@@ -39,21 +39,24 @@ const ProjectCard = ({
       </div>
 
       {/* body */}
-      <div className="text-[#7E7D7D] bg-[#D9D9D9] py-6 px-4">
-        <h5 className="text-[20px] font-semibold mb-2 text-[#1E1E1E]">
-          {title}
-        </h5>
-        <p className="text-[#7E7D7D] mb-4">{description}</p>
-
-        {projectLink && (
-          <Link
-            href={projectLink}
-            rel="noopener noreferrer"
-            className="flex gap-2 text-[#1E1E1E] font-medium transition-transform duration-200 hover:scale-[1.03]">
-            <IoArrowForwardCircleOutline size={27} color="#1E1E1E" />
-            <p>{t("projectsSeeMore")}</p>
-          </Link>
-        )}
+      <div className="text-[#7E7D7D] bg-[#D9D9D9] py-6 px-4 h-full flex flex-col ">
+        <div>
+          <h5 className="text-[20px] font-semibold mb-2 text-[#1E1E1E]">
+            {title}
+          </h5>
+          <p className="text-[#7E7D7D] mb-4">{description}</p>
+        </div>
+        <div>
+          {projectLink && (
+            <Link
+              href={projectLink}
+              rel="noopener noreferrer"
+              className="flex gap-2 text-[#1E1E1E] font-medium transition-transform duration-200 hover:scale-[1.03]">
+              <IoArrowForwardCircleOutline size={27} color="#1E1E1E" />
+              <p>{t("projectsSeeMore")}</p>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
