@@ -12,18 +12,34 @@ function ProjectsSectionNew() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const projectOneDescription = t("EraPageDescription");
-  // const projectTwoDescription = t("projectTwoDescription");
+  const projectEraDescription = t("EraPageDescription");
+  const projectJDelisDescription = t("PortifolioPageMiniDescription");
   // const projectTreeDescription = t("projectTreeDescription");
 
   const projectsData = [
     {
       id: 1,
+      title: "JDelis Website",
+      description: projectJDelisDescription,
+      image: "/images/projects/details/jdelis/colors-3.png",
+      tag: ["Tudo", "Web"],
+      tags: [
+        "Web Design",
+        "React",
+        "JavaScript",
+        "Branding",
+        "Content",
+        "Logo",
+      ],
+      link: "/projects/portifolio",
+    },
+    {
+      id: 2,
       title: "Era Principle Website",
-      description: projectOneDescription,
+      description: projectEraDescription,
       image: "/images/projects/details/era/gallery-one-era.png",
       tag: ["Tudo", "Web"],
-      tags: ["Web Design", "React", "JavaScript", "Branding"],
+      tags: ["Web Design", "React", "JavaScript", "Branding", "Logo"],
       link: "/projects/era-principle",
     },
     // {
@@ -82,7 +98,9 @@ function ProjectsSectionNew() {
           isSelected={tag === "Mobile"}
         />
       </div> */}
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul
+        ref={ref}
+        className="grid md:grid-cols-3 gap-8 md:gap-12 items-stretch">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -98,6 +116,7 @@ function ProjectsSectionNew() {
               imgUrl={project.image}
               projectLink={project.link}
               tags={project.tags}
+              className="h-full flex flex-col"
               // gitUrl={project.gitUrl}
               // previewUrl={project.previewUrl}
             />
