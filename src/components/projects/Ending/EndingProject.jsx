@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "react-i18next";
 import React from "react";
 import Link from "next/link";
 
@@ -11,6 +12,8 @@ const EndingSection = ({
   colorCode = "#FF7A00", // default orange
   theme = "light",
 }) => {
+  const { t } = useTranslation(["translation"]);
+
   const isDark = theme === "dark";
 
   const palette = {
@@ -42,7 +45,7 @@ const EndingSection = ({
             rel="noopener noreferrer"
             className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03]"
             style={{ backgroundColor: colorLink }}>
-            Ver projeto
+            {t("projectsEndingProjectView")}
           </Link>
         )}
         {codeLink && (
@@ -52,7 +55,7 @@ const EndingSection = ({
             rel="noopener noreferrer"
             className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03]"
             style={{ backgroundColor: colorCode }}>
-            Ver código
+            {t("projectsEndingCodeView")}
           </Link>
         )}
       </div>

@@ -51,6 +51,8 @@
   "projectsLogotype": "Logotype",
   "projectsColors": "Colors",
   "projectsSeeMore": "View details",
+  "projectsEndingProjectView": "See project",
+  "projectsEndingCodeView": "See code",
 
   "PortifolioPageTitle": "JDelis",
   "PortifolioPageDescription": "Born from my passion for design and technology, this project reflects my journey as an Interaction Designer and Front-End Developer, blending creativity, interactivity, and digital experiences that captivate.",
@@ -59,6 +61,14 @@
   "PortifolioPageSolution": "The solution was to develop a unique visual identity that combined aesthetics and functionality, reflecting the way I work and communicate. I chose a modern and interactive design that favors fluid navigation and immersion in each project. Colors, typography, and layouts were carefully designed to convey dynamism and creativity, while the site’s structure emphasizes clarity and user experience. In this way, the portfolio became more than just a collection of works: it is also an expression of my journey and my vision of digital creation.",
   "PortifolioPageLogoTitle": "Incorporating identity",
   "PortifolioPageLogoDescription": "The logo merges elegance with personality, shaped by a refined and fluid typography. The interplay of gentle curves and bold lines embodies the pillars of my identity: creativity, dynamism, and authenticity. It strikes a balance between the artistry of design and the precision of development, projecting a modern, confident presence that tells the story of my journey.",
+  "PortifolioPageColorsTitle": "Powerful tones",
+  "PortifolioPageColorsDescription": "The portfolio’s color palette was designed to convey impact, clarity, and authenticity. Each shade reinforces the essence of my visual identity and helps create a memorable experience. This combination of tones forms a powerful contrast that strengthens the pillars of my work: dynamism, creativity, and engaging experiences.",
+  "PortifolioPageColorsOne": "Winter gray",
+  "PortifolioPageColorsTwo": "Charcoal gray",
+  "PortifolioPageColorsThree": "Scarlet red",
+  "PortifolioPageColorsFour": "Pure white",
+  "PortifolioPageWebsiteTitle": "Design with purpose",
+  "PortifolioPageWebsiteDescription": "The JDelis portfolio reflects my perspective as an Interaction Designer and Front-End Developer. More than showcasing results, it expresses the dedication poured into each creation — from the choice of colors to the way navigation was designed. This website is also how I introduce myself to the professional world, bringing together my skills and experiences in a single space, crafted to foster connections and open opportunities for collaboration and hiring.",
 
   "EraPageTitle": "ERA Principal",
   "EraPageDescription": "ERA Principle is not just fashion. It is an invitation to step inside the future of clothing—where technology and style converge through Augmented Reality.",
