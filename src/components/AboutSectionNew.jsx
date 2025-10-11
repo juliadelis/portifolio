@@ -14,7 +14,7 @@ const AboutSectionNew = () => {
       title: "Skills",
       id: "skills",
       content: (
-        <div className="p-6 grid grid-cols-3 gap-2 bg-[#D9D9D9] text-[#1E1E1E] rounded-[32px]">
+        <div className="py-6 grid grid-cols-3 gap-2 bg-[#D9D9D9] text-[#1E1E1E] rounded-[32px]">
           <div className="flex flex-col gap-2">
             <p>React</p>
             <p>JavaScript</p>
