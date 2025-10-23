@@ -13,10 +13,20 @@ function ProjectsSectionNew() {
   const isInView = useInView(ref, { once: true });
 
   const projectEraDescription = t("EraPageDescription");
+  const projectElysiusDescription = t("ElysiusPageMiniDescription");
   const projectJDelisDescription = t("PortifolioPageMiniDescription");
   // const projectTreeDescription = t("projectTreeDescription");
 
   const projectsData = [
+    {
+      id: 3,
+      title: "Elysius Website",
+      description: projectElysiusDescription,
+      image: "/images/projects/details/elysius/cover.png",
+      tag: ["Tudo", "Web"],
+      tags: ["Web Design", "React", "Typescript", "UX/UI"],
+      link: "/projects/elysius",
+    },
     {
       id: 1,
       title: "JDelis Website",
@@ -43,6 +53,7 @@ function ProjectsSectionNew() {
       tags: ["Web Design", "React", "JavaScript", "Branding", "Logo", "UX/UI"],
       link: "/projects/era-principle",
     },
+
     // {
     //   id: 1,
     //   title: "Horsing Around Website",
