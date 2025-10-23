@@ -50,6 +50,7 @@
   "projectsChallenge": "Challenge",
   "projectsLogotype": "Logotype",
   "projectsColors": "Colors",
+  "projectsFont": "Font",
   "projectsSeeMore": "View details",
   "projectsEndingProjectView": "See project",
   "projectsEndingCodeView": "See code",
@@ -83,5 +84,24 @@
   "EraPageColorsDescription": "The choice of colors reflects this balance between contrast and energy. Eight bold, vivid tones were selected to stand out against neutral black and white, ensuring that the experience feels both dynamic and striking. Together, they embody the duality at the heart of ERA—simplicity on the surface, and a world of color when technology unlocks its hidden layers.",
   "EraPageWebsiteTitle": "Echoes of the Experience",
   "EraPageWebsiteDescription": "The website itself was designed to reflect ERA’s core values: innovation, creativity, and interaction. Built with a clean, modern structure, it highlights both the physical and digital aspects of the project. Motion design and interactive elements mirror the AR experience, making the platform not just an exhibition but an extension of the brand’s vision.",
-  "EraPageEnding": "ERA is more than a project—it’s a glimpse into the future of fashion. By merging creativity and technology, we aim to inspire new ways of experiencing style, where every garment tells a story beyond fabric."
+  "EraPageEnding": "ERA is more than a project—it’s a glimpse into the future of fashion. By merging creativity and technology, we aim to inspire new ways of experiencing style, where every garment tells a story beyond fabric.",
+
+  "ElysiusPageTitle": "Elysius",
+  "ElysiusPageDescription": "Elysius is not just a city, it’s a realm where mythology meets modern storytelling. Built for GTA Roleplay, it merges divine lore and immersive design, inviting players to step into a world shaped by choice, destiny, and creation.",
+  "ElysiusPageAbout": "Created as a digital showcase project, the Elysius website was designed to bring the immersive atmosphere of the roleplay server into the web experience. The goal was to translate the mythical essence of Greek legends into a visual identity that communicates mystery, power, and narrative depth. Building upon the existing logo and concept, the website was developed to awaken curiosity and present the server as an entire world waiting to be discovered.",
+  "ElysiusPageChallenge": "The main challenge was to balance the mystical and narrative aspects of Greek mythology with a clear and functional information structure. The design needed to evoke the grandeur of the gods and the density of the lore without compromising readability or usability. The website had to speak to two audiences at once — those seeking immersion and atmosphere, and those looking for straightforward, informative access to Elysius.",
+  "ElysiusPageSolution": "The result is an interface that merges aesthetics and purpose. Drawing inspiration from temples, shadows, and divine light, the digital presence of Elysius reflects its own mythological world. Developed entirely with React and Next.js, the site was built with a focus on responsiveness, performance, and seamless interaction. Each section guides the visitor through a narrative journey — from epic introduction to gameplay overview — keeping design, storytelling, and mythology in perfect harmony.",
+  "ElysiusPageColorsTitle": "Shades of Immortality",
+  "ElysiusPageColorsDescription": "The Elysius color palette draws from divine contrasts — light and darkness, celestial and mortal. Deep shades of blue and black evoke mystery and immersion, while marble white reflects the purity of temples and the calm balance of the gods. This palette creates an atmosphere of reverence and depth, reinforcing the sense of being in the presence of something powerful and sacred.",
+  "ElysiusPageColorsOne": "Deep Blue",
+  "ElysiusPageColorsTwo": "Midnight Blue",
+  "ElysiusPageColorsThree": "Marble White",
+  "ElysiusPageFontTitle": "The Voice of the Divine",
+  "ElysiusPageFontDescription": "Typography was chosen to echo the duality of Elysius. Glamore, used for headlines, evokes sophistication and the mythic aura of the gods — elegant yet powerful. Inter Sans Serif, used for longer texts, ensures clarity and readability, blending modern precision with timeless structure. Together, these two families embody the harmony between the epic and the contemporary.",
+  "ElysiusPageFontDescriptionOne": "Chosen to embody the grandeur and symbolism of Elysius, Glamore carries a classical elegance reminiscent of Greek temple inscriptions. Its refined curves and distinguished details evoke power, divinity, and mystery, enhancing the project’s immersive essence. Used in headlines and key sections, it delivers visual strength and sophistication with every word.",
+  "ElysiusPageFontDescriptionTwo": "To balance the mythical tone of the primary typography, Inter Sans Serif was selected for its clarity, neutrality, and readability. Its modern structure contrasts with Glamore’s classical style, ensuring fluid reading across devices and screen sizes. Used in paragraphs and interface text, it provides a clean, accessible, and contemporary experience that grounds the divine in the digital.",
+  "ElysiusPageWebsiteTitle": "Beyond the Gates",
+  "ElysiusPageWebsiteDescription": "The website was conceived as more than a static showcase — it’s a portal that connects visitors to the world of Elysius. With a responsive layout, subtle motion, and clean structure, the experience balances storytelling and technology. Animations and smooth transitions guide the user deeper into the myth, making navigation feel like a journey through divine realms. The result is a digital extension of Elysius itself — a fusion of code, art, and mythology.",
+  "ElysiusPageEnding": "Elysius is more than a server — it’s a creative journey that blends myth and technology. Through thoughtful UX/UI design and development, the project transforms ancient legends into a digital experience that feels alive and eternal.",
+  "ElysiusPageMiniDescription": "Elysius is a digital realm where mythology and design converge, bringing divine stories to life through modern web creation."
 }
