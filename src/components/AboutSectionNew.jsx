@@ -17,6 +17,7 @@ const AboutSectionNew = () => {
         <div className="p-6 grid grid-cols-3 gap-2 bg-[#D9D9D9] text-[#1E1E1E] rounded-[32px]">
           <div className="flex flex-col gap-2">
             <p>React</p>
+            <p>Angular</p>
             <p>JavaScript</p>
             <p>TypeScript</p>
             <p>Next.js</p>
