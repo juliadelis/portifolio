@@ -27,6 +27,7 @@ const AboutSectionNew = () => {
           <div className="flex flex-col gap-2">
             <p>Tailwind</p>
             <p>Express</p>
+            <p>Vue.js</p>
             <p>Vite</p>
             <p>C#</p>
             <p>C#</p>
