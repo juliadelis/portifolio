@@ -21,7 +21,7 @@ const FontSection = () => {
           description={t("ElysiusPageFontDescription")}
         />
       </div>
-      <div className="mt-12 h-screen py-6 grid grid-cols-1 md:grid-cols-2 flex-wrap">
+      <div className="mt-12 h-fit md:h-screen py-6 grid grid-cols-1 md:grid-cols-2 flex-wrap">
         <Font
           title={"Glamore"}
           subTitle={"Headline"}
