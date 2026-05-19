@@ -37,13 +37,13 @@ const EndingSection = ({
       </div>
 
       {/* Right side buttons */}
-      <div className="flex gap-4 w-full lg:w-auto justify-start lg:justify-end">
+      <div className="relative z-30 flex gap-4 w-full lg:w-auto justify-start lg:justify-end">
         {projectLink && (
           <Link
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03]"
+            className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03] cursor-pointer"
             style={{ backgroundColor: colorLink }}>
             {t("projectsEndingProjectView")}
           </Link>
@@ -53,11 +53,11 @@ const EndingSection = ({
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03]"
+            className="rounded-full px-5 py-2 text-white text-sm font-medium transition-transform duration-200 hover:scale-[1.03] cursor-pointer"
             style={{ backgroundColor: colorCode }}>
             {t("projectsEndingCodeView")}
           </Link>
-        )}
+        )}  
       </div>
     </div>
   );

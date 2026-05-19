@@ -1,17 +1,24 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import resourcesToBackend from "i18next-resources-to-backend";
+import enTranslation from "../public/locales/en/translation.json";
+import ptTranslation from "../public/locales/pt/translation.json";
+
+const resources = {
+  en: {
+    translation: enTranslation,
+  },
+  pt: {
+    translation: ptTranslation,
+  },
+};
 
 if (!i18n.isInitialized) {
   i18n
     .use(initReactI18next)
-    .use(
-      resourcesToBackend((lng, ns) =>
-        import(`../public/locales/${lng}/${ns}.json`)
-      )
-    )
     .init({
+      resources,
       supportedLngs: ["en", "pt"],
+      lng: "en",
       fallbackLng: "en",
       debug: process.env.NODE_ENV === "development",
       defaultNS: "translation",

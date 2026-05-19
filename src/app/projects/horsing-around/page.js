@@ -11,8 +11,8 @@ import WebGallerySection from "./WebGallery/WebsiteSection.jsx";
 import EndingSection from "../../../components/projects/Ending/EndingProject.jsx";
 import BackToTopButton from "../../../components/BackToTopButton.jsx";
 
-import backgroundImage from "../../../../public/images/projects/details/jdelis/bgimage_jdelis_details_2.png";
-import logoImage from "../../../../public/images/jdelis.svg";
+import backgroundImage from "../../../../public/images/projects/details/horsing/bg_cover.png";
+import logoImage from "../../../../public/images/projects/details/horsing/logo.svg";
 
 export default function Portifolio() {
   const { t } = useTranslation(["translation"]);
@@ -29,27 +29,27 @@ export default function Portifolio() {
       <Navbar theme="light" />
       <div id="project-header" className="container mt-24 px-4 mx-auto py-2">
         <ProjectHeader
-          title={t("PortifolioPageTitle")}
-          description={t("PortifolioPageDescription")}
+          title={t("HorsingAroundPageTitle")}
+          description={t("HorsingAroundPageDescription")}
           backgroundImage={backgroundImage}
           tags={tags}
         />
       </div>
       <div className="container px-4 mx-auto mt-10  py-12">
         <CaseStudyScroll
-          about={t("PortifolioPageAbout")}
-          challange={t("PortifolioPageChallenge")}
-          solution={t("PortifolioPageSolution")}
-          sidebarColor={"rgb(220, 38, 38)"}
-          underlineColor={"rgba(220,38,38,0.3)"}
+          about={t("HorsingAroundPageAbout")}
+          challange={t("HorsingAroundPageChallenge")}
+          solution={t("HorsingAroundPageSolution")}
+          sidebarColor={"rgb(255, 208, 138)"}
+          underlineColor={"rgba(255,208,138)"}
         />
       </div>
 
       <div className="container px-4 mt-24 mx-auto py-2">
         <LogotypeProjects
           chapter={t("projectsLogotype")}
-          title={t("PortifolioPageLogoTitle")}
-          description={t("PortifolioPageLogoDescription")}
+          title={t("HorsingAroundPageLogoTitle")}
+          description={t("HorsingAroundPageLogoDescription")}
           index="01"
           className="min-h-screen"
           backgroundImage={logoImage}
@@ -69,12 +69,14 @@ export default function Portifolio() {
       </div>
       <div className="container relative z-20 mt-[-100px] md:mt-[-200px] px-4  mx-auto mb-20">
         <EndingSection
-          description={t("PortifolioPageEnding")}
-          colorCode="#DC2626"
+        projectLink={"https://horsing-around.vercel.app/"}
+        colorLink="#FFD08A"
+          description={t("HorsingAroundPageEnding")}
+          colorCode="#333129"
           codeLink={"https://github.com/juliadelis/portifolio"}
         />
       </div>
-      <BackToTopButton color="#AE2A2A" hoverColor="#801616" />
+      <BackToTopButton color="#333129" hoverColor="#333129" />
     </main>
   );
 }
