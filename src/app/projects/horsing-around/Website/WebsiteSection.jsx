@@ -7,7 +7,7 @@ import photoDisplay from "../../../../../public/images/projects/details/jdelis/w
 const WebsiteSection = () => {
   const { t } = useTranslation(["translation"]);
   return (
-    <div className="container mt-24 mb-24 mx-auto py-2">
+    <div className="container mt-2 md:mt-24 mb-24 mx-auto py-2">
       <TitleStructureProjects
         theme="light"
         index={"03"}

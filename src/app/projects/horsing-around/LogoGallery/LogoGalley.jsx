@@ -9,7 +9,7 @@ import Gallery6 from "../../../../../public/images/projects/details/horsing/logo
 
 const LogoGalleryHorsing = () => {
   return (
-    <div className="w-full  mt-24 mb-24 py-2 relative">
+    <div className="w-full mt-3 mb-3  md:mt-24 md:mb-24 py-2 relative">
       <div className="grid grid-cols-12 gap-6 items-stretch">
         <div className="col-span-5">
           <div className="w-full h-full">

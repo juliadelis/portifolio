@@ -161,7 +161,7 @@ const Section = forwardRef(
       <section
         id={id}
         ref={ref}
-        className="scroll-mt-24 py-24 first:pt-0 last:pb-32">
+        className="scroll-mt-24 py-5 md:py-24 first:pt-0 last:pb-6 md:last:pb-32">
         <motion.h2
           className="text-3xl md:text-[32px] font-semibold tracking-tight text-[#1E1E1E]"
           initial={{ opacity: 0, y: 12 }}

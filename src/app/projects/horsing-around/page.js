@@ -36,7 +36,7 @@ export default function Portifolio() {
           tags={tags}
         />
       </div>
-      <div className="container px-4 mx-auto mt-10  py-12">
+      <div className="container px-4 mx-auto mt-1 md:mt-10 py-3 md:py-12">
         <CaseStudyScroll
           about={t("HorsingAroundPageAbout")}
           challange={t("HorsingAroundPageChallenge")}
@@ -56,7 +56,7 @@ export default function Portifolio() {
           backgroundImage={logoImage}
         />
       </div>
-      <div className="container px-4 mt-24 mx-auto py-2">
+      <div className="container px-4 mt-1 md:mt-24 mx-auto py-2">
         <LogoGalleryHorsing />
       </div>
       <div>

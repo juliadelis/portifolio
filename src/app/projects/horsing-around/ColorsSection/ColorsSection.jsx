@@ -105,7 +105,7 @@ const ColorCard = ({
       </div>
 
       <div
-        className="flex min-h-[104px] flex-col justify-end px-6 py-7"
+        className="flex min-h-[104px] flex-col justify-end px-3 md:px-6 py-7"
         style={{ backgroundColor: hash, color: textColor }}>
         <div className="mb-3 flex flex-col gap-3 text-[14px] uppercase leading-none tracking-normal">
           <p>{hash}</p>
