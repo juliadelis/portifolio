@@ -141,7 +141,7 @@ function ProjectsSectionNew() {
       <div className="mt-10 flex justify-start">
         <Link
           href="/projects"
-          className="rounded-full bg-[#DC2626] px-6 py-3 text-sm font-medium text-white transition-all  hover:shadow-[8px_5px_51.9px_#dc26264c] ">
+          className="px-6 font-bold py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-r  bg-[#DC2626] transition-all hover:shadow-[8px_5px_51.9px_#dc26264c] ">
           {t("projectAllButton")}
         </Link>
       </div>
