@@ -20,9 +20,10 @@ export default function Portifolio() {
     "Web Design",
     "React",
     "Javascript",
-    "Content",
-    "Logo",
     "UX/UI",
+    "Logo", 
+    "Branding",
+    "Content",
   ];
   return (
     <main className="flex min-h-screen flex-col bg-[#F0F0F0] ">
