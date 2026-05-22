@@ -12,12 +12,9 @@ const WebsiteSection = () => {
         theme="light"
         index={"03"}
         chapter={"Website"}
-        title={t("PortifolioPageWebsiteTitle")}
-        description={t("PortifolioPageWebsiteDescription")}
+        title={t("HorsingAroundPageWebsiteTitle")}
+        description={t("HorsingAroundPageWebsiteDescription")}
       />
-      <div className="mt-12">
-        <Image src={photoDisplay} alt="visuals" priority className="w-full" />
-      </div>
     </div>
   );
 };

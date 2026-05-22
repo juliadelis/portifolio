@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
+import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -13,11 +14,21 @@ function ProjectsSectionNew() {
   const isInView = useInView(ref, { once: true });
 
   const projectEraDescription = t("EraPageDescription");
+  const projectHorsingDescription = t("HorsingAroundPageDescription");
   const projectElysiusDescription = t("ElysiusPageMiniDescription");
   const projectJDelisDescription = t("PortifolioPageMiniDescription");
   // const projectTreeDescription = t("projectTreeDescription");
 
   const projectsData = [
+    {
+       id: 4,
+       title: "Horsing Around Application",
+       description: projectHorsingDescription,
+        image: "/images/projects/details/horsing/cover5.png",
+      tag: ["Tudo", "Web"],
+      tags: ["Web Design", "React", "Typescript", "UX/UI", "Logo", "Branding", "Content"],
+      link: "/projects/horsing-around",
+     },
     {
       id: 3,
       title: "Elysius Website",
@@ -54,15 +65,7 @@ function ProjectsSectionNew() {
       link: "/projects/era-principle",
     },
 
-    // {
-    //   id: 1,
-    //   title: "Horsing Around Website",
-    //   description: projectTwoDescription,
-    //   image: "/images/projects/mockup-portifolio-horsing_around.png",
-    //   tag: ["Tudo", "Web"],
-    //   gitUrl: "https://github.com/juliadelis/horsingAround",
-    //   previewUrl: "https://horsing-around.vercel.app/",
-    // },
+     
     // {
     //   id: 2,
     //   title: "React Camp Website",
@@ -80,7 +83,7 @@ function ProjectsSectionNew() {
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
-  );
+  ).slice(0, 3);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -135,6 +138,13 @@ function ProjectsSectionNew() {
           </motion.li>
         ))}
       </ul>
+      <div className="mt-10 flex justify-start">
+        <Link
+          href="/projects"
+          className="rounded-full bg-[#DC2626] px-6 py-3 text-sm font-medium text-white transition-all  hover:shadow-[8px_5px_51.9px_#dc26264c] ">
+          {t("projectAllButton")}
+        </Link>
+      </div>
     </section>
   );
 }

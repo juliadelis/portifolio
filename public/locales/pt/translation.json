@@ -23,6 +23,8 @@
   "graduation": "Graduação em Design de Interação",
 
   "projectsTitle": "Meus projetos",
+  "projectButton": "Ver Detalhes",
+  "projectAllButton": "Todos os Projetos",
   "projectsDescription": "Uma coleção de projetos criados para explorar, desafiar e criar experiências que conectam.",
   "projectOneDescription": "O Princípio ERA não é apenas moda. É um convite para adentrar o futuro do vestuário — onde tecnologia e estilo convergem por meio da Realidade Aumentada.",
   "projectTwoDescription": "O sistema de gerenciamento de cavalos para hípica é uma plataforma completa desenvolvida utilizando as tecnologias React e Node.js. Projetada para facilitar a administração e acompanhamento dos equinos, esta aplicação está preparada para otimizar operações, garantir o cuidado adequado dos cavalos e impulsionar o sucesso da hípica.",
@@ -115,15 +117,16 @@
   "HorsingAroundPageSolution": "A solução foi desenvolver uma aplicação full-stack moderna utilizando React, Node.js, Supabase e PostgreSQL, estruturada em organizações independentes e permissões baseadas em função. O Horsing Around entrega autenticação segura, gerenciamento completo de cavalos, autorização de equipes, dashboards operacionais e gerenciamento de imagens em uma experiência integrada. A interface foi projetada para priorizar clareza, eficiência e consistência visual, transformando processos complexos em uma plataforma intuitiva para organizações equestres.",
   "HorsingAroundPageLogoTitle": "Inspirado pelo movimento",
   "HorsingAroundPageLogoDescription": "A identidade visual foi criada para transmitir elegância, força e conexão através de elementos que representam a essência do universo equestre. Os cavalos em composição simétrica simbolizam equilíbrio, parceria e movimento, enquanto o elemento central reforça direção, propósito e evolução. A tipografia refinada complementa essa linguagem visual, construindo uma identidade que une tradição e modernidade em uma presença marcante e atemporal.",
-  "HorsingAroundPageColorsTitle": "Tons potentes",
-  "HorsingAroundPageColorsDescription": "A paleta de cores do portfólio foi pensada para transmitir impacto, clareza e autenticidade. Cada tom reforça a essência da minha identidade visual e contribui para criar uma experiência marcante. Essa combinação de tons cria um contraste poderoso que reforça os pilares do meu trabalho: dinamismo, criatividade e experiências que engajam.",
-  "HorsingAroundPageColorsOne": "Cinza inverno",
-  "HorsingAroundPageColorsTwo": "Cinza carvão",
-  "HorsingAroundPageColorsThree": "Vermelho scarlet",
-  "HorsingAroundPageColorsFour": "Branco puro",
-  "HorsingAroundPageWebsiteTitle": "Design com propósito",
-  "HorsingAroundPageWebsiteDescription": "O portfólio JDelis traduz meu olhar como Designer de Interação e Desenvolvedora Front-End. Mais do que mostrar resultados, ele expressa o empenho colocado em cada criação — desde a escolha das cores até a forma como a navegação foi planejada. Este site é também a maneira como me apresento ao mundo profissional, reunindo minhas habilidades e experiências em um espaço único, pensado para gerar conexões e abrir oportunidades de colaboração e contratação.",
-  "HorsingAroundPageEnding": "Cada detalhe deste portfólio reflete minha trajetória como designer e desenvolvedora — dedicação, criatividade e o impulso de criar experiências que realmente envolvem.",
-  "HorsingAroundPageMiniDescription": "Nascido da minha paixão por design e tecnologia, este projeto reflete minha jornada como Designer de Interação e Desenvolvedora Front-End, unindo criatividade, interatividade e experiências digitais que cativam."
+  "HorsingAroundPageColorsTitle": "Ecos do movimento",
+  "HorsingAroundPageColorsDescription": "Inspirada pela energia do universo equestre, a paleta combina contraste e harmonia para transmitir movimento e presença. Tons escuros simbolizam força e estabilidade, enquanto tons quentes representam conexão, tradição e a identidade atemporal da cultura equestre.",
+  "HorsingAroundPageColorsOne": "Puro-Sangue",
+  "HorsingAroundPageColorsTwo": "Espírito Selvagem",
+  "HorsingAroundPageColorsThree": "Crina Branca",
+  "HorsingAroundPageColorsFour": "Ferradura de Prata",
+  "HorsingAroundPageColorsFive": "Sela de Mel",
+  "HorsingAroundPageWebsiteTitle": "Tecnologia encontra tradição",
+  "HorsingAroundPageWebsiteDescription": "Horsing Around une tecnologia moderna e tradição equestre através de uma experiência pensada para ser intuitiva, eficiente e conectada. Dos dashboards organizacionais aos fluxos de gerenciamento de cavalos, cada interação foi desenvolvida para transformar operações complexas em uma jornada digital clara e moderna.",
+  "HorsingAroundPageEnding": "Cada detalhe da Horsing Around representa o encontro entre minha paixão por cavalos e tecnologia — unindo design, funcionalidade e experiências bem pensadas para criar uma plataforma voltada para simplificar a gestão equestre.",
+  "HorsingAroundPageMiniDescription": "Inspirado pelos cavalos, impulsionado pela tecnologia e desenvolvido para criar experiências que conectam pessoas, organizações e operações equestres do dia a dia."
 
 }

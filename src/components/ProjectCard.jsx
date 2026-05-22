@@ -12,12 +12,17 @@ const ProjectCard = ({
   tags = [],
 }) => {
   const { t } = useTranslation(["translation"]);
+  const CardWrapper = projectLink ? Link : "div";
+  const cardWrapperProps = projectLink ? { href: projectLink } : {};
 
   return (
-    <div className="rounded-[32px] overflow-hidden h-full">
+    <CardWrapper
+      {...cardWrapperProps}
+      className="group block h-full rounded-[32px] overflow-hidden transition-transform duration-200 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-4 focus-visible:ring-offset-[#121212]"
+      aria-label={`${t("projectsSeeMore")}: ${title}`}>
       {/* Image + tags */}
       <div
-        className="h-52 relative group bg-cover bg-center"
+        className="h-52 relative bg-cover bg-center"
         style={{ backgroundImage: `url(${imgUrl})` }}>
         {/* soft top gradient so tags stay readable */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent pointer-events-none" />
@@ -48,17 +53,18 @@ const ProjectCard = ({
         </div>
         <div>
           {projectLink && (
-            <Link
-              href={projectLink}
-              rel="noopener noreferrer"
-              className="flex gap-2 text-[#1E1E1E] font-medium transition-transform duration-200 hover:scale-[1.03]">
-              <IoArrowForwardCircleOutline size={27} color="#1E1E1E" />
+            <div className="flex gap-2 text-[#1E1E1E] font-medium transition-transform duration-200">
+              <IoArrowForwardCircleOutline
+                size={27}
+                color="#1E1E1E"
+                aria-hidden="true"
+              />
               <p>{t("projectsSeeMore")}</p>
-            </Link>
+            </div>
           )}
         </div>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 

@@ -4,8 +4,8 @@ import Navbar from "../../../components/Navbar";
 import ProjectHeader from "../../../components/projects/HeaderProjects.jsx";
 import CaseStudyScroll from "../../../components/projects/CaseStudyScroll.jsx";
 import LogotypeProjects from "../../../components/projects/LogotypeProjects.jsx";
-import LogoGalleryPortifolio from "./LogoGallery/LogoGalley.jsx";
-import ColorsPortifolioSection from "./ColorsSection/ColorsSection.jsx";
+import LogoGalleryHorsing from "./LogoGallery/LogoGalley.jsx";
+import ColorsHorsingSection from "./ColorsSection/ColorsSection.jsx";
 import WebsiteSection from "./Website/WebsiteSection.jsx";
 import WebGallerySection from "./WebGallery/WebsiteSection.jsx";
 import EndingSection from "../../../components/projects/Ending/EndingProject.jsx";
@@ -56,10 +56,10 @@ export default function Portifolio() {
         />
       </div>
       <div className="container px-4 mt-24 mx-auto py-2">
-        <LogoGalleryPortifolio />
+        <LogoGalleryHorsing />
       </div>
-      <div className="px-4">
-        <ColorsPortifolioSection />
+      <div>
+        <ColorsHorsingSection />
       </div>
       <div className="px-4">
         <WebsiteSection />
@@ -67,13 +67,13 @@ export default function Portifolio() {
       <div>
         <WebGallerySection />
       </div>
-      <div className="container relative z-20 mt-[-100px] md:mt-[-200px] px-4  mx-auto mb-20">
+      <div className="container relative z-20  px-4  mx-auto mb-20">
         <EndingSection
         projectLink={"https://horsing-around.vercel.app/"}
         colorLink="#FFD08A"
           description={t("HorsingAroundPageEnding")}
           colorCode="#333129"
-          codeLink={"https://github.com/juliadelis/portifolio"}
+          codeLink={"https://github.com/juliadelis/horsingAround"}
         />
       </div>
       <BackToTopButton color="#333129" hoverColor="#333129" />

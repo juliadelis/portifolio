@@ -1,131 +1,86 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 
-import photo1 from "../../../../../public/images/projects/details/jdelis/webGallery/img-1.png";
-import photo2 from "../../../../../public/images/projects/details/jdelis/webGallery/img-2.png";
-import photo3 from "../../../../../public/images/projects/details/jdelis/webGallery/img-3.png";
-import photo4 from "../../../../../public/images/projects/details/jdelis/webGallery/img-4.png";
-import photo5 from "../../../../../public/images/projects/details/jdelis/webGallery/img-5.png";
-import photo6 from "../../../../../public/images/projects/details/jdelis/webGallery/img-6.png";
-import photo7 from "../../../../../public/images/projects/details/jdelis/webGallery/img-7.png";
-import photo8 from "../../../../../public/images/projects/details/jdelis/webGallery/img-8.png";
+import heroBg from "../../../../../public/images/projects/details/horsing/website/web-bg.png";
+import loginAndHome from "../../../../../public/images/projects/details/horsing/website/web-1.png";
+import horsesList from "../../../../../public/images/projects/details/horsing/website/web-3.png";
+import horseDetails from "../../../../../public/images/projects/details/horsing/website/web-4.png";
+import addHorse from "../../../../../public/images/projects/details/horsing/website/web-5.png";
+import team from "../../../../../public/images/projects/details/horsing/website/web-6.png";
+import saddleBg from "../../../../../public/images/projects/details/horsing/website/web-7.png";
 
 const WebGallerySection = () => {
-  const sectionRef = useRef(null);
-  const [scrollX, setScrollX] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = sectionRef.current;
-      if (!section) return;
-
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      const start = rect.top - windowHeight;
-
-      const end = rect.bottom;
-
-      const totalScroll = end - start;
-      const scrolled = windowHeight - rect.top;
-      const progress = Math.min(Math.max(scrolled / totalScroll, 0), 1);
-
-      const translateX = progress * -90; // 0 → -100%
-      setScrollX(translateX);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <section className=" py-2 w-full overflow-hidden">
-      <div className="grid grid-cols-1 grid-flow-col md:grid-cols-4 gap-6 w-full max-w-[100vw]">
-        <div className="flex flex-col gap-9 pt-6">
-          <div className="rounded-br-[24px] rounded-tr-[24px] overflow-hidden">
-            <Image
-              src={photo1}
-              alt="Gallery Image 1"
-              className="w-full h-[240px] object-cover object-right"
-              priority
-            />
-          </div>
-          <div className="flex gap-6">
-            <div className="w-1/2 h-[200px] rounded-br-[24px] rounded-tr-[24px] overflow-hidden">
-              <Image
-                src={photo6}
-                alt="Gallery Image 6"
-                className="w-full h-full object-cover object-right"
-                priority
-              />
-            </div>
-            <div className="w-1/2 h-[200px] rounded-[24px] overflow-hidden">
-              <Image
-                src={photo5}
-                alt="Gallery Image 5"
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </div>
+    <section className="w-full overflow-hidden bg-[#F0F0F0]">
+      <div className="relative min-h-[620px] w-full overflow-hidden md:min-h-[760px] lg:min-h-[900px]">
+        <Image
+          src={heroBg}
+          alt="Horses in a field"
+          fill
+          sizes="100vw"
+          className="object-cover object-[42%_50%]"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/10" />
 
-        <div className="h-[545px] rounded-[24px] overflow-hidden">
-          <Image
-            src={photo2}
-            alt="Gallery Image 2"
-            className="w-full h-full object-contain"
-          />
-        </div>
-
-        <div className="h-[505px] pt-6 overflow-hidden rounded-[24px] hidden md:flex">
-          <Image
-            src={photo8}
-            alt="Gallery Image 8"
-            className="w-full h-full object-cover rounded-[24px] max-w-[230px]"
-          />
-        </div>
-
-        <div className="flex flex-col gap-9 pt-6">
-          <div className="h-[220px] rounded-[24px] overflow-hidden hidden md:flex">
+        <div className="relative z-10 mx-auto flex min-h-[620px] w-full max-w-6xl items-center justify-end px-6 py-16 md:min-h-[760px] md:px-10 lg:min-h-[900px]">
+          <div className="w-[86vw] max-w-[620px] translate-y-6 md:w-[58vw] lg:w-[570px] lg:translate-x-10">
             <Image
-              src={photo3}
-              alt="Gallery Image 3"
-              className="w-full h-full object-cover"
-              priority
-            />
-          </div>
-          <div className="h-[220px] rounded-[24px] overflow-hidden hidden md:flex">
-            <Image
-              src={photo4}
-              alt="Gallery Image 4"
-              className="w-full h-full object-cover"
+              src={loginAndHome}
+              alt="Horsing Around login and dashboard screens"
+              className="h-auto w-full drop-shadow-[0_28px_32px_rgba(0,0,0,0.35)]"
               priority
             />
           </div>
         </div>
       </div>
-      <div ref={sectionRef} className="relative h-[100vh] mt-24">
-        <div className="sticky top-0 h-screen overflow-hidden">
-          <div
-            className="absolute top-0 left-0  will-change-transform"
-            style={{
-              width: "2506px",
-              transform: `translateX(${scrollX}%)`,
-            }}>
-            <Image
-              src={photo7}
-              alt="Gallery Image 7"
-              className="w-full h-full object-cover object-center"
-              priority
-            />
-          </div>
-        </div>
+
+      <div className="relative mx-auto min-h-[880px] w-full max-w-6xl px-6 py-20 md:min-h-[1120px] md:px-10 md:py-28 lg:min-h-[1240px]">
+        <GalleryMockup
+          src={horsesList}
+          alt="Horse list screen"
+          className="ml-auto w-[78vw] max-w-[520px] md:mr-8 md:w-[48vw] lg:mr-20 lg:w-[520px]"
+        />
+        <GalleryMockup
+          src={horseDetails}
+          alt="Horse details screen"
+          className=" w-[86vw] max-w-[620px] md:mt-[-72px] md:w-[56vw] lg:ml-14 lg:w-[620px]"
+        />
+        <GalleryMockup
+          src={team}
+          alt="Team management screen"
+          className="ml-auto  w-[78vw] max-w-[520px] md:mt-[-48px] md:mr-6 md:w-[48vw] lg:mr-24 lg:w-[520px]"
+        />
+        <GalleryMockup
+          src={addHorse}
+          alt="Add horse form screen"
+          className=" w-[84vw] max-w-[600px] md:mt-[-52px] md:w-[54vw] lg:w-[600px]"
+        />
+      </div>
+
+      <div className="relative h-[560px] w-full md:h-[760px] lg:h-[920px]">
+        <Image
+          src={saddleBg}
+          alt="Western saddle on a white horse"
+          fill
+          sizes="100vw"
+          className="object-cover object-[54%_48%]"
+        />
       </div>
     </section>
+  );
+};
+
+const GalleryMockup = ({ src, alt, className }) => {
+  return (
+    <div className={`relative ${className}`}>
+      <Image
+        src={src}
+        alt={alt}
+        className="h-auto w-full drop-shadow-[18px_22px_22px_rgba(0,0,0,0.28)]"
+      />
+    </div>
   );
 };
 

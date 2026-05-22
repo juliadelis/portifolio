@@ -23,6 +23,8 @@
   "graduation": "Bachelor's Degree in Interaction Design",
 
   "projectsTitle": "My projects",
+  "projectButton": "View Details",
+  "projectAllButton": "View All Projects",
   "projectsDescription": "A collection of projects shaped by curiosity, design, and code. Built to explore, to challenge, and to create experiences that connect.",
   "projectOneDescription": "ERA Principle is not just fashion. It is an invitation to step inside the future of clothing—where technology and style converge through Augmented Reality.",
   "projectTwoDescription": "The horse management system for equestrian centers is a comprehensive platform developed using React and Node.js technologies. Designed to facilitate equine management and tracking, this application is designed to streamline operations, ensure proper horse care, and drive equestrian center success.",
@@ -113,16 +115,17 @@
   "HorsingAroundPageSolution": "The solution was developing a modern full-stack application powered by React, Node.js, Supabase, and PostgreSQL, designed around organization-based workspaces and permission-driven access. Horsing Around delivers secure authentication, horse management tools, team authorization flows, operational dashboards, and image handling within a unified environment. The interface was designed to prioritize clarity, efficiency, and consistency, transforming operational complexity into a streamlined experience for equestrian organizations.",
   "HorsingAroundPageLogoTitle": "Inspired by movement",
   "HorsingAroundPageLogoDescription": "The logo was designed to capture the essence of Horsing Around by blending elegance, movement, and connection. The mirrored horses reinforce balance and partnership, while the refined typography introduces a premium and timeless presence. Together, these elements establish a visual identity that reflects both the equestrian world and the platform’s modern digital purpose.",
-  "HorsingAroundPageColorsTitle": "Powerful tones",
-  "HorsingAroundPageColorsDescription": "The portfolio’s color palette was designed to convey impact, clarity, and authenticity. Each shade reinforces the essence of my visual identity and helps create a memorable experience. This combination of tones forms a powerful contrast that strengthens the pillars of my work: dynamism, creativity, and engaging experiences.",
-  "HorsingAroundPageColorsOne": "Winter gray",
-  "HorsingAroundPageColorsTwo": "Charcoal gray",
-  "HorsingAroundPageColorsThree": "Scarlet red",
-  "HorsingAroundPageColorsFour": "Pure white",
-  "HorsingAroundPageWebsiteTitle": "Design with purpose",
-  "HorsingAroundPageWebsiteDescription": "The JDelis portfolio reflects my perspective as an Interaction Designer and Front-End Developer. More than showcasing results, it expresses the dedication poured into each creation — from the choice of colors to the way navigation was designed. This website is also how I introduce myself to the professional world, bringing together my skills and experiences in a single space, crafted to foster connections and open opportunities for collaboration and hiring.",
-  "HorsingAroundPageEnding": "Every detail of this portfolio embodies my path as a designer and developer—dedication, creativity, and the drive to craft experiences that truly engage.",
-  "HorsingAroundPageMiniDescription": "Born from my passion for design and technology, this project reflects my journey as an Interaction Designer and Front-End Developer, blending creativity, interactivity, and digital experiences that captivate."
+  "HorsingAroundPageColorsTitle": "Echoes of movement",
+  "HorsingAroundPageColorsDescription": "Inspired by the energy of the equestrian world, the palette combines contrast and harmony to capture both movement and presence. Dark tones symbolize strength and stability, while warm accents bring connection, heritage, and the timeless identity of horseback culture.",
+  "HorsingAroundPageColorsOne": "Thoroughbred",
+  "HorsingAroundPageColorsTwo": "Wild Spirit",
+  "HorsingAroundPageColorsThree": "White Mane",
+  "HorsingAroundPageColorsFour": "Silver Horseshoe",
+  "HorsingAroundPageColorsFive": "Honey Saddle",
+  "HorsingAroundPageWebsiteTitle": "Technology meets tradition",
+  "HorsingAroundPageWebsiteDescription": "Horsing Around brings together modern technology and equestrian tradition through an experience designed to feel intuitive, efficient, and connected. From organization dashboards to horse management workflows, every interaction was created to transform operational complexity into a clear and modern digital journey.",
+  "HorsingAroundPageEnding": "Every aspect of Horsing Around reflects the intersection between my passion for horses and technology — combining design, functionality, and thoughtful experiences to build a platform created to simplify equestrian management.",
+  "HorsingAroundPageMiniDescription": "Inspired by horses, powered by technology, and designed to create experiences that connect people, organizations, and everyday equestrian operations."
 
 
 }
